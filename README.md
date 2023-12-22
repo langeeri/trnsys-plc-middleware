@@ -1,6 +1,6 @@
 # Communication middleware between TRNSYS and multiple PLCs
 
-This project provides a Modbus server interface designed for use with TRNSYS simulations. It allows communication between TRNSYS and Modbus servers for read-write and read-only operations.
+This project provides middleware designed for use within Hardware-in-the-Loop testbeds in conjunction with TRNSYS simulations. It facilitates communication between TRNSYS and PLCs for both read-write and read-only operations. 
 
 ## Table of Contents
 
@@ -19,21 +19,24 @@ This project provides a Modbus server interface designed for use with TRNSYS sim
 
 ## Introduction
 
-This project provides a Python-based implementation of a Modbus server interface to be used in conjunction with the TRNSYS simulation environment. It allows for seamless communication between TRNSYS simulations and Modbus servers, enabling the exchange of data for read-write and read-only operations.
+This project provides middleware designed for use within Hardware-in-the-Loop testbeds in conjunction with TRNSYS simulations. It allows for seamless communication between TRNSYS simulations and Modbus servers, enabling the exchange of data for read-write and read-only operations. The middleware functions as a Modbus client, while the PLCs functions as Modbus servers.
+
 
 ## Requirements
 
-- Python 3.x
+- TRNSYS 18.04.0000 and higher
+- Type 1375
+- Python 3.10.x
 - Required Python packages (specified in `requirements.txt`)
-- Modbus-compatible servers
+- PLCs or other Modbus-compatible servers
 
 ## Installation
 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/modbus-trnsys-interface.git
-    cd modbus-trnsys-interface
+    git clone https://github.com/your-username/Middleware_Type1375.git
+    cd Middleware_Type1375
     ```
 
 2. Install the required packages:

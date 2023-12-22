@@ -47,6 +47,12 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 
 ## Usage
 
+Define inputs and outputs inside the Type 1375. For more information check Type´s 1375 documentation.
+Configure ModBus servers inside your PLCS
+Start the server_manager.exe
+Define all your servers and registers
+
+
 ### Initialization
 
 To initialize Modbus servers, use the provided `Initialization` function. This function establishes connections to Modbus servers based on the provided configuration in `SERVER_CONFIGS`.

@@ -1,25 +1,5 @@
 # -*- coding: utf-8 -*-
 
-"""
-Interface for data exchange between the TRNSYS 
-simulation environment and Tecomat Foxtrot PLC.
-
-"""
-
-__author__ = "Erika Langerová, Michal Broum"
-__copyright__ = "<2023> <Regulus>"
-__credits__ = [" ", " "]
-
-__license__ = "MIT (X11)"
-__version__ = "1.1.0"
-__maintainer__ = ["Erika Langerová"]
-__email__ = ["erika.langerova@regulus.cz"]
-__status__ = "Alfa"
-
-__python__ = "3.10.5"
-__TRNSYS__ = "18.04.0000"
-
-
 # Copyright 2023 Regulus
 
 # Permission is hereby granted, free of charge, to any person obtaining a
@@ -42,52 +22,123 @@ __TRNSYS__ = "18.04.0000"
 
 # --------------------------------------------------------------------------
 
-# Import libraries.
-import os
+__author__ = "Erika Langerová, Michal Broum"
+__copyright__ = "<2023> <Regulus>"
+__credits__ = [" ", " "]
+
+__license__ = "MIT (X11)"
+__version__ = "1.2.0"
+__maintainer__ = ["Erika Langerová"]
+__email__ = ["erika.langerova@regulus.cz"]
+__status__ = "Alfa"
+
+__python__ = "3.10.5"
+__TRNSYS__ = "18.04.0000"
+
+# --------------------------------------------------------------------------
+
 import logging
-import datetime
 import time as osTime
-import numpy as np
-from typing import Dict, List, Tuple, Union
+from typing import Dict, List, Union, Optional
 from pymodbus.client import ModbusTcpClient
 from pymodbus.payload import BinaryPayloadBuilder, Endian
 from server_config import SERVER_CONFIGS
+from setup import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
 
-
-
-SIM_SLEEP = 1
-
-
-
-# ------------------------------- TRNSYS -----------------------------------------
-
-# Pass the name of the TRNSYS .deck file to the simulationModel variable.
-simulationModel = os.path.splitext(os.path.basename(__file__))[0]
-
-# Configure the logging module
-logging.basicConfig(filename='DataExchange.log', level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s')
 
 # ------------------------------- TRNSYS -----------------------------------------
 
 class ModbusServer:
-    def __init__(self, host: str, port: int, rw_register_initial: int, rw_register_final: int, input_indexes: List[int], r_register_initial: int, r_register_final: int):
+    """
+    Represents a Modbus server with methods for connecting, reading, and writing data.
+
+    Parameters
+    ----------
+    host : str
+        The IP address or hostname of the Modbus server.
+    port : int
+        The port number on which the Modbus server is listening.
+    rw_registers : List[int]
+        List of Modbus registers for read-write operations.
+    input_indexes : List[int]
+        List of input indexes for the server.
+    r_registers : List[int]
+        List of Modbus registers for read-only operations.
+
+    Attributes
+    ----------
+    host : str
+        The IP address or hostname of the Modbus server.
+    port : int
+        The port number on which the Modbus server is listening.
+    rw_registers : List[int]
+        List of Modbus registers for read-write operations.
+    input_indexes : List[int]
+        List of input indexes for the server.
+    r_registers : List[int]
+        List of Modbus registers for read-only operations.
+    client : ModbusTcpClient
+        The Modbus TCP client used to communicate with the server.
+
+    Methods
+    -------
+    connect()
+        Establish a connection to the Modbus server.
+    write_inputs(inputs)
+        Write inputs to the Modbus server.
+    read_outputs(TRNData)
+        Read outputs from the Modbus server and update TRNData.
+    close_connection()
+        Close the connection to the Modbus server.
+
+    """
+
+    def __init__(self, host: str, port: int, rw_registers: Optional[List[int]], input_indexes: List[int], r_registers: Optional[List[int]]):
         self.host = host
         self.port = port
-        self.rw_register_initial = rw_register_initial
-        self.rw_register_final = rw_register_final
+        self.rw_registers = rw_registers
         self.input_indexes = input_indexes
-        self.r_register_initial = r_register_initial
-        self.r_register_final = r_register_final
+        self.r_registers = r_registers
         self.client = None
 
-    def connect(self):
+    def open_connection(self)-> None:
+        """
+        Establish a connection to the Modbus server.
+
+        Raises
+        ------
+        Exception
+            If an error occurs during the connection.
+
+        """
+
         try:
             self.client = ModbusTcpClient(host=self.host, port=self.port)
         except Exception as e:
             logging.error(f"Error initializing Modbus client for {self.host}:{self.port}: {e}")
             raise
 
-    def write_inputs(self, inputs: List[Union[int, float]]):
+    def write_inputs(self, inputs: List[Union[int, float]]) -> List[Union[int, float]]:
+        """
+        Write inputs to the Modbus server.
+
+        Parameters
+        ----------
+        inputs : List[Union[int, float]]
+            List of input values to be written to the server.
+
+        Returns
+        -------
+        List[Union[int, float]]
+            The list of inputs that were written.
+
+        Raises
+        ------
+        Exception
+            If an error occurs during the write operation.
+
+        """
+
         try:
             client = self.client
             builder = BinaryPayloadBuilder(byteorder=Endian.Big, wordorder=Endian.Big)
@@ -99,54 +150,90 @@ class ModbusServer:
 
             payload = builder.to_registers()
 
-            for addressRW in range(self.rw_register_initial - 1, self.rw_register_final):
-                result = client.write_registers(addressRW, payload[addressRW - (self.rw_register_initial - 1)])
+            for indexRW, addressRW in enumerate(self.rw_registers):
+                result = client.write_registers(addressRW-1, payload[indexRW])  # starts from 0
                 if result.isError():
                     logging.error(f"Error writing to PLC register for {self.host}:{self.port}: {result}")
                 else:
-                    logging.info(f"Successfully wrote {inputs[addressRW - (self.rw_register_initial - 1)]} to PLC register {addressRW} for {self.host}:{self.port}")
+                    logging.info(f"Successfully wrote {inputs[indexRW]} to PLC register {addressRW} for {self.host}:{self.port}")
 
             return inputs
 
         except Exception as e:
             logging.error(f"Error writing to PLC register for {self.host}:{self.port}: {e}")
 
-    def read_outputs(self, TRNData: Dict[str, Dict[str, Union[int, float]]]):
+    def read_outputs(self, TRNData: Dict[str, Dict[str, Union[int, float]]]) -> None:
+        """
+        Read outputs from the Modbus server and update TRNData.
+
+        Parameters
+        ----------
+        TRNData : Dict[str, Dict[str, Union[int, float]]]
+            A dictionary containing TRNSYS simulation model data.
+
+        Raises
+        ------
+        Exception
+            If an error occurs during the read operation.
+
+        """
+
         arrayOfResponses = []
         
         try: 
-            for addressR in range(self.r_register_initial - 1, self.r_register_final):
+            for addressR in self.r_registers:
                 responseR = self.client.read_holding_registers(addressR)
                 registerValue = responseR.getRegister(0)
                 arrayOfResponses.append(registerValue)
 
             # Send response to TRNSYS.
-            for x in range(0, (self.r_register_final - self.r_register_initial) + 1):
-                TRNData[simulationModel]["outputs"][x] = arrayOfResponses[x]
-            
-            logging.info(f"TRNData[simulationModel][outputs][x] {TRNData[simulationModel]['outputs'][x]}")
+            for indexR, addressR in enumerate(self.r_registers):
+                TRNData[SIMULATION_MODEL]["outputs"][indexR] = arrayOfResponses[indexR]
 
         except Exception as e:
-            logging.error(f"Error writing to TRNSYS for {self.host}:{self.port}: {e}")
+            logging.error(f"Error writing to TRNSYS from {self.host}:{self.port}: {e}")
 
-    def close_connection(self):
+    def close_connection(self) -> None:
+        """
+        Close the connection to the Modbus server.
+
+        Raises
+        ------
+        Exception
+            If an error occurs during the connection closure.
+
+        """
+        
         try:
             if self.client:
                 self.client.close()
         except Exception as e:
             logging.error(f"Error closing Modbus connection for {self.host}:{self.port}: {e}")
 
-def initialize_servers(server_configs: List[Dict[str, Union[str, int, List[int], int, int]]]) -> List[ModbusServer]:
+def define_servers(server_configs: List[Dict[str, Union[str, int, List[int], int, List[int]]]]) -> List[ModbusServer]:
+    """
+    Initialize Modbus servers based on the provided configuration.
+
+    Parameters
+    ----------
+    server_configs : List[Dict[str, Union[str, int, List[int], int, List[int]]]]
+        List of dictionaries containing configuration information for Modbus servers.
+
+    Returns
+    -------
+    List[ModbusServer]
+        List of initialized ModbusServer instances.
+
+    """
+
     servers = []
     for config in server_configs:
         server = ModbusServer(
             host=config['host'],
             port=config['port'],
-            rw_register_initial=config['rw_register_initial'],
-            rw_register_final=config['rw_register_final'],
+            rw_registers=config['rw_registers'],
             input_indexes=config['input_indexes'],
-            r_register_initial=config['r_register_initial'],
-            r_register_final=config['r_register_final']
+            r_registers=config['r_registers']
         )
         servers.append(server)
     return servers
@@ -158,29 +245,46 @@ def initialize_servers(server_configs: List[Dict[str, Union[str, int, List[int],
 # --------------------------------------------------------------------------------
 # ...
 
-def Initialization(TRNData):
-    """ 
+def Initialization(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
+    """
     Function called at TRNSYS initialization. 
-    Opens log files and the communication with the PLC.  
-    
-    Parameters
-    ------------
-    TRNData : nested_dict
-        Data received from TRNSYS.
+    Used to initialize servers based on the provided configuration. 
 
-    Returns
-    ------------
-    None
+    Parameters
+    ----------
+    TRNData : Dict[str, Dict[str, List[Union[int, float]]]]
+        A nested dictionary containing simulation data.
+
+    Raises
+    ------
+    Exception
+        If an error occurs during initialization, an exception is raised with
+        details about the error.
+
+    Notes
+    -----
+    This function initializes global variable 'servers' by connecting to servers
+    based on the provided server configurations in SERVER_CONFIGS.
+
+    Examples
+    --------
+    >>> Initialization(TRNData)
+
+    The above example initializes servers using the configuration provided in
+    'TRNData'. 
 
     """
+
     global servers
 
+    logging.basicConfig(filename=LOGGING_FILENAME, level=logging.DEBUG, format='%(asctime)s [%(levelname)s] %(message)s')
+
     try:
-        server_configs = SERVER_CONFIGS  # You can modify this line if necessary
-        servers = initialize_servers(server_configs)
+        server_configs = SERVER_CONFIGS  
+        servers = define_servers(server_configs)
 
         for server in servers:
-            server.connect()
+            server.open_connection()
 
     except Exception as e:
         logging.error(f"Error during initialization: {e}")
@@ -190,20 +294,20 @@ def Initialization(TRNData):
 
 # --------------------------------------------------------------------------------
 
-def StartTime(TRNData):
+def StartTime(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
     Function called at TRNSYS starting time (not an actual time step, 
     initial values should be reported).
-    Writes the contents of the nested TRNData dictionary to logFile.
 
     Parameters
-    ------------
-    TRNData : nested_dict
-        Data received from TRNSYS.
+    ----------
+    TRNData : Dict[str, Dict[str, List[Union[int, float]]]]
+        A nested dictionary containing simulation data.
 
     Returns
-    ------------
+    -------
     None
+        This function does not return any value.
 
     """
 
@@ -212,18 +316,19 @@ def StartTime(TRNData):
  
 # --------------------------------------------------------------------------------
 
-def Iteration(TRNData):
+def Iteration(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
     Function called at each TRNSYS iteration within a time step.
 
     Parameters
-    ------------
-    TRNData : nested_dict
-        Data received from TRNSYS.
+    ----------
+    TRNData : Dict[str, Dict[str, List[Union[int, float]]]]
+        A nested dictionary containing simulation data.
 
     Returns
-    ------------
+    -------
     None
+        This function does not return any value.
 
     """
     
@@ -233,55 +338,53 @@ def Iteration(TRNData):
 
 def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
-    Function called at the end of each time step after iteration and before moving 
-    on to next time step.
-
-    Reads input data from TRNSYS, organizes it into specific categories,
-    and writes the data to the corresponding Modbus registers on PLCs.
-    It also reads data from specific Modbus registers on a PLC and updates TRNSYS data.
-    A delay is introduced using `osTime.sleep` to slow down the simulation time.
+    Perform end-of-time-step actions on connected servers based on TRNData.
 
     Parameters
     ----------
-    TRNData : dict
-        A nested dictionary containing TRNSYS simulation data.
+    TRNData : Dict[str, Dict[str, List[Union[int, float]]]]
+        A nested dictionary containing simulation data.
 
     Returns
     -------
     None
+        This function does not return any value.
 
     Raises
     ------
     Exception
-        If an error occurs during the end of the time step, an exception is raised.
-        The error is logged using the logging module.
+        If an error occurs during the end-of-time-step actions, an exception is raised
+        with details about the error.
+
+    Notes
+    -----
+    This function iterates over connected servers, writes inputs based on the provided
+    TRNData, and reads outputs if applicable. It logs relevant information during the process.
 
     Examples
     --------
-    >>> trn_data = {'simulationModel': {'inputs': [0, 1, 2, 3, 4, 5, 6, 7], 'outputs': [0, 0, 0]}}
-    >>> EndOfTimeStep(trn_data)
-    >>> # Perform actions at the end of each time step in the TRNSYS simulation
+    >>> EndOfTimeStep(TRNData)
+
+    The above example performs end-of-time-step actions on connected servers using the
+    values provided in 'TRNData'.
 
     """
     
     try:
     
         for server in servers:
-            TRNinputs = TRNData[simulationModel]["inputs"]
-            logging.info(f"TRNinputs: {TRNinputs}")
+            TRNinputs = TRNData[SIMULATION_MODEL]["inputs"]
             server_inputs = []
 
             for index in server.input_indexes:
                 if 0 < index < len(TRNinputs):
                     server_inputs.append(TRNinputs[index])
-
             server.write_inputs(server_inputs)
 
-            if server.r_register_initial is not None or server.r_register_final is not None:
+            if server.r_registers:
                 server.read_outputs(TRNData)
         
         logging.info(f"server_inputs: {server_inputs}")
-
 
     except Exception as e:
         logging.error(f"Error during EndOfTimeStep: {e}")
@@ -290,7 +393,7 @@ def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> Non
 
 # --------------------------------------------------------------------------------
 
-def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]])-> None:
+def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
     Function called at the end of the simulation (once).
     Outputs are meaningless at this call.
@@ -300,12 +403,13 @@ def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]])
 
     Parameters
     ----------
-    TRNData : dict
-        A nested dictionary containing TRNSYS simulation data.
+    TRNData : Dict[str, Dict[str, List[Union[int, float]]]]
+        A nested dictionary containing simulation data.
 
     Returns
     -------
     None
+        This function does not return any value.
 
     Raises
     ------
@@ -315,7 +419,7 @@ def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]])
 
     Examples
     --------
-    >>> trn_data = {'simulationModel': {'outputs': [0, 0, 0]}}
+    >>> trn_data = {'SIMULATION_MODEL': {'outputs': [0, 0, 0]}}
     >>> LastCallOfSimulation(trn_data)
     >>> # Perform actions at the end of the entire TRNSYS simulation
 
@@ -324,7 +428,7 @@ def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]])
     try:
         for server in servers:
             server.close_connection()
-
+        
         logging.shutdown()
 
     except Exception as e:

@@ -1,5 +1,4 @@
 import tkinter as tk
-from tkinter import messagebox
 from server_config import SERVER_CONFIGS
 
 def add_server():

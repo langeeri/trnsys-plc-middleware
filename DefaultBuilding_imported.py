@@ -46,7 +46,7 @@ from server_config import SERVER_CONFIGS
 from setup import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
 
 
-# ------------------------------- TRNSYS -----------------------------------------
+# --------------------------------------------------------------------------
 
 class ModbusServer:
     """

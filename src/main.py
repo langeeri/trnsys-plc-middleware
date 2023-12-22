@@ -27,7 +27,7 @@ __copyright__ = "<2023> <Regulus>"
 __credits__ = [" ", " "]
 
 __license__ = "MIT (X11)"
-__version__ = "1.2.0"
+__version__ = "1.2.1"
 __maintainer__ = ["Erika Langerová"]
 __email__ = ["erika.langerova@regulus.cz"]
 __status__ = "Alfa"

@@ -7,10 +7,10 @@ Welcome to trnsys-plc-middleware's documentation!
 =================================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
-
+   source/modules
 
 
 Indices and tables

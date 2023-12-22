@@ -43,7 +43,7 @@ from typing import Dict, List, Union, Optional
 from pymodbus.client import ModbusTcpClient
 from pymodbus.payload import BinaryPayloadBuilder, Endian
 from server_config import SERVER_CONFIGS
-from setup import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
+from middleware_config import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
 
 
 # --------------------------------------------------------------------------

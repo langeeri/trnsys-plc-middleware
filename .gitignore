@@ -1,0 +1,14 @@
+*.dck
+*.lst
+*.out
+*.PTI
+*.ssr
+*.HPC
+*.HPC*
+*.BAL
+BuiFiles/
+DefaultFiles/
+Geometry/
+TestingSequence/
+Weather/
+__pycache__

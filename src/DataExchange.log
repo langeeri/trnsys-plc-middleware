@@ -1,0 +1,1476 @@
+2023-12-22 21:30:18,481 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:18,486 [DEBUG] Connection to Modbus server established. Socket ('127.0.0.1', 27862)
+2023-12-22 21:30:18,486 [DEBUG] Current transaction state - IDLE
+2023-12-22 21:30:18,486 [DEBUG] Running transaction 1
+2023-12-22 21:30:18,486 [DEBUG] SEND: 0x0 0x1 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:18,486 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,486 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,563 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,564 [DEBUG] RECV: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:18,564 [DEBUG] Processing: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:18,565 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:18,565 [DEBUG] Adding transaction 1
+2023-12-22 21:30:18,566 [DEBUG] Getting transaction 1
+2023-12-22 21:30:18,566 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,566 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:18,567 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:18,567 [DEBUG] Running transaction 2
+2023-12-22 21:30:18,567 [DEBUG] SEND: 0x0 0x2 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:18,567 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,568 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,610 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,611 [DEBUG] RECV: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:18,611 [DEBUG] Processing: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:18,612 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:18,612 [DEBUG] Adding transaction 2
+2023-12-22 21:30:18,612 [DEBUG] Getting transaction 2
+2023-12-22 21:30:18,612 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,613 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:18,613 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:18,613 [DEBUG] Running transaction 3
+2023-12-22 21:30:18,613 [DEBUG] SEND: 0x0 0x3 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:18,614 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,614 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,657 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,657 [DEBUG] RECV: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:18,657 [DEBUG] Processing: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:18,658 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:18,658 [DEBUG] Adding transaction 3
+2023-12-22 21:30:18,658 [DEBUG] Getting transaction 3
+2023-12-22 21:30:18,658 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,658 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:18,658 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:18,658 [DEBUG] Running transaction 4
+2023-12-22 21:30:18,658 [DEBUG] SEND: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:18,658 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,659 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,704 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,704 [DEBUG] RECV: 0x0 0x4 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:18,704 [DEBUG] Processing: 0x0 0x4 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:18,704 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:18,705 [DEBUG] Adding transaction 4
+2023-12-22 21:30:18,705 [DEBUG] Getting transaction 4
+2023-12-22 21:30:18,705 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,705 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:18,705 [DEBUG] Running transaction 5
+2023-12-22 21:30:18,705 [DEBUG] SEND: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:18,705 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,705 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,753 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,753 [DEBUG] RECV: 0x0 0x5 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:18,753 [DEBUG] Processing: 0x0 0x5 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:18,753 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:18,753 [DEBUG] Adding transaction 5
+2023-12-22 21:30:18,753 [DEBUG] Getting transaction 5
+2023-12-22 21:30:18,753 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,753 [DEBUG] [380, 0]
+2023-12-22 21:30:18,755 [DEBUG] Connection to Modbus server established. Socket ('127.0.0.1', 27863)
+2023-12-22 21:30:18,756 [DEBUG] Current transaction state - IDLE
+2023-12-22 21:30:18,756 [DEBUG] Running transaction 1
+2023-12-22 21:30:18,756 [DEBUG] SEND: 0x0 0x1 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:18,756 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,756 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,797 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,797 [DEBUG] RECV: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:18,797 [DEBUG] Processing: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:18,797 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:18,797 [DEBUG] Adding transaction 1
+2023-12-22 21:30:18,797 [DEBUG] Getting transaction 1
+2023-12-22 21:30:18,797 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,798 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:18,798 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:18,798 [DEBUG] Running transaction 2
+2023-12-22 21:30:18,798 [DEBUG] SEND: 0x0 0x2 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:18,798 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:18,798 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:18,844 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:18,844 [DEBUG] RECV: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:18,844 [DEBUG] Processing: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:18,844 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:18,844 [DEBUG] Adding transaction 2
+2023-12-22 21:30:18,844 [DEBUG] Getting transaction 2
+2023-12-22 21:30:18,844 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:18,844 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:18,844 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:19,883 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:19,883 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:19,883 [DEBUG] Running transaction 6
+2023-12-22 21:30:19,883 [DEBUG] SEND: 0x0 0x6 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:19,883 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:19,884 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:19,917 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:19,917 [DEBUG] RECV: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:19,917 [DEBUG] Processing: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:19,917 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:19,917 [DEBUG] Adding transaction 6
+2023-12-22 21:30:19,917 [DEBUG] Getting transaction 6
+2023-12-22 21:30:19,918 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:19,918 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:19,918 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:19,918 [DEBUG] Running transaction 7
+2023-12-22 21:30:19,918 [DEBUG] SEND: 0x0 0x7 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:19,918 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:19,918 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:19,963 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:19,963 [DEBUG] RECV: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:19,963 [DEBUG] Processing: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:19,963 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:19,963 [DEBUG] Adding transaction 7
+2023-12-22 21:30:19,963 [DEBUG] Getting transaction 7
+2023-12-22 21:30:19,963 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:19,963 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:19,964 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:19,964 [DEBUG] Running transaction 8
+2023-12-22 21:30:19,964 [DEBUG] SEND: 0x0 0x8 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:19,964 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:19,964 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:20,010 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:20,010 [DEBUG] RECV: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:20,011 [DEBUG] Processing: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:20,011 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:20,011 [DEBUG] Adding transaction 8
+2023-12-22 21:30:20,011 [DEBUG] Getting transaction 8
+2023-12-22 21:30:20,011 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:20,012 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:20,012 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:20,012 [DEBUG] Running transaction 9
+2023-12-22 21:30:20,012 [DEBUG] SEND: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:20,012 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:20,013 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:20,058 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:20,059 [DEBUG] RECV: 0x0 0x9 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:20,059 [DEBUG] Processing: 0x0 0x9 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:20,059 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:20,060 [DEBUG] Adding transaction 9
+2023-12-22 21:30:20,060 [DEBUG] Getting transaction 9
+2023-12-22 21:30:20,060 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:20,060 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:20,061 [DEBUG] Running transaction 10
+2023-12-22 21:30:20,061 [DEBUG] SEND: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:20,061 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:20,062 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:20,104 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:20,104 [DEBUG] RECV: 0x0 0xa 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:20,104 [DEBUG] Processing: 0x0 0xa 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:20,105 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:20,105 [DEBUG] Adding transaction 10
+2023-12-22 21:30:20,105 [DEBUG] Getting transaction 10
+2023-12-22 21:30:20,105 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:20,105 [DEBUG] [380, 0]
+2023-12-22 21:30:20,105 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:20,105 [DEBUG] Running transaction 3
+2023-12-22 21:30:20,105 [DEBUG] SEND: 0x0 0x3 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:20,105 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:20,106 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:20,151 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:20,151 [DEBUG] RECV: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:20,151 [DEBUG] Processing: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:20,151 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:20,151 [DEBUG] Adding transaction 3
+2023-12-22 21:30:20,151 [DEBUG] Getting transaction 3
+2023-12-22 21:30:20,151 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:20,151 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:20,151 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:20,151 [DEBUG] Running transaction 4
+2023-12-22 21:30:20,152 [DEBUG] SEND: 0x0 0x4 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:20,152 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:20,152 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:20,197 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:20,197 [DEBUG] RECV: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:20,198 [DEBUG] Processing: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:20,198 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:20,198 [DEBUG] Adding transaction 4
+2023-12-22 21:30:20,198 [DEBUG] Getting transaction 4
+2023-12-22 21:30:20,198 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:20,198 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:20,198 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:21,226 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:21,226 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,226 [DEBUG] Running transaction 11
+2023-12-22 21:30:21,227 [DEBUG] SEND: 0x0 0xb 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:21,227 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,227 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,271 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,271 [DEBUG] RECV: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:21,271 [DEBUG] Processing: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:21,271 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:21,272 [DEBUG] Adding transaction 11
+2023-12-22 21:30:21,272 [DEBUG] Getting transaction 11
+2023-12-22 21:30:21,272 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,272 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:21,272 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,272 [DEBUG] Running transaction 12
+2023-12-22 21:30:21,272 [DEBUG] SEND: 0x0 0xc 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:21,272 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,272 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,316 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,316 [DEBUG] RECV: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:21,316 [DEBUG] Processing: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:21,316 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:21,316 [DEBUG] Adding transaction 12
+2023-12-22 21:30:21,316 [DEBUG] Getting transaction 12
+2023-12-22 21:30:21,316 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,316 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:21,317 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,317 [DEBUG] Running transaction 13
+2023-12-22 21:30:21,317 [DEBUG] SEND: 0x0 0xd 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:21,317 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,317 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,363 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,363 [DEBUG] RECV: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:21,363 [DEBUG] Processing: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:21,363 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:21,363 [DEBUG] Adding transaction 13
+2023-12-22 21:30:21,363 [DEBUG] Getting transaction 13
+2023-12-22 21:30:21,363 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,363 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:21,363 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,364 [DEBUG] Running transaction 14
+2023-12-22 21:30:21,364 [DEBUG] SEND: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:21,364 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,364 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,410 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,410 [DEBUG] RECV: 0x0 0xe 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:21,410 [DEBUG] Processing: 0x0 0xe 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:21,410 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:21,410 [DEBUG] Adding transaction 14
+2023-12-22 21:30:21,410 [DEBUG] Getting transaction 14
+2023-12-22 21:30:21,410 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,410 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,411 [DEBUG] Running transaction 15
+2023-12-22 21:30:21,411 [DEBUG] SEND: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:21,411 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,411 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,457 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,457 [DEBUG] RECV: 0x0 0xf 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:21,457 [DEBUG] Processing: 0x0 0xf 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:21,457 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:21,457 [DEBUG] Adding transaction 15
+2023-12-22 21:30:21,457 [DEBUG] Getting transaction 15
+2023-12-22 21:30:21,457 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,457 [DEBUG] [380, 0]
+2023-12-22 21:30:21,457 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,458 [DEBUG] Running transaction 5
+2023-12-22 21:30:21,458 [DEBUG] SEND: 0x0 0x5 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:21,458 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,458 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,504 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,504 [DEBUG] RECV: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:21,504 [DEBUG] Processing: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:21,504 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:21,504 [DEBUG] Adding transaction 5
+2023-12-22 21:30:21,504 [DEBUG] Getting transaction 5
+2023-12-22 21:30:21,504 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,504 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:21,504 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:21,504 [DEBUG] Running transaction 6
+2023-12-22 21:30:21,504 [DEBUG] SEND: 0x0 0x6 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:21,504 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:21,505 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:21,550 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:21,550 [DEBUG] RECV: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:21,550 [DEBUG] Processing: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:21,551 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:21,551 [DEBUG] Adding transaction 6
+2023-12-22 21:30:21,551 [DEBUG] Getting transaction 6
+2023-12-22 21:30:21,551 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:21,551 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:21,551 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:22,583 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:22,583 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,584 [DEBUG] Running transaction 16
+2023-12-22 21:30:22,584 [DEBUG] SEND: 0x0 0x10 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:22,584 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,584 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,629 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,629 [DEBUG] RECV: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:22,629 [DEBUG] Processing: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:22,629 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:22,629 [DEBUG] Adding transaction 16
+2023-12-22 21:30:22,630 [DEBUG] Getting transaction 16
+2023-12-22 21:30:22,630 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,630 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:22,630 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,630 [DEBUG] Running transaction 17
+2023-12-22 21:30:22,630 [DEBUG] SEND: 0x0 0x11 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:22,630 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,630 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,675 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,675 [DEBUG] RECV: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:22,676 [DEBUG] Processing: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:22,676 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:22,676 [DEBUG] Adding transaction 17
+2023-12-22 21:30:22,676 [DEBUG] Getting transaction 17
+2023-12-22 21:30:22,676 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,677 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:22,677 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,677 [DEBUG] Running transaction 18
+2023-12-22 21:30:22,677 [DEBUG] SEND: 0x0 0x12 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:22,677 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,677 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,722 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,723 [DEBUG] RECV: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:22,723 [DEBUG] Processing: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:22,723 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:22,723 [DEBUG] Adding transaction 18
+2023-12-22 21:30:22,723 [DEBUG] Getting transaction 18
+2023-12-22 21:30:22,723 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,723 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:22,723 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,723 [DEBUG] Running transaction 19
+2023-12-22 21:30:22,724 [DEBUG] SEND: 0x0 0x13 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:22,724 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,724 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,769 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,769 [DEBUG] RECV: 0x0 0x13 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:22,769 [DEBUG] Processing: 0x0 0x13 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:22,769 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:22,769 [DEBUG] Adding transaction 19
+2023-12-22 21:30:22,769 [DEBUG] Getting transaction 19
+2023-12-22 21:30:22,770 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,770 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,770 [DEBUG] Running transaction 20
+2023-12-22 21:30:22,770 [DEBUG] SEND: 0x0 0x14 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:22,770 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,770 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,816 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,817 [DEBUG] RECV: 0x0 0x14 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:22,817 [DEBUG] Processing: 0x0 0x14 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:22,817 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:22,817 [DEBUG] Adding transaction 20
+2023-12-22 21:30:22,817 [DEBUG] Getting transaction 20
+2023-12-22 21:30:22,818 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,818 [DEBUG] [380, 0]
+2023-12-22 21:30:22,818 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,819 [DEBUG] Running transaction 7
+2023-12-22 21:30:22,819 [DEBUG] SEND: 0x0 0x7 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:22,819 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,819 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,863 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,863 [DEBUG] RECV: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:22,863 [DEBUG] Processing: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:22,863 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:22,864 [DEBUG] Adding transaction 7
+2023-12-22 21:30:22,864 [DEBUG] Getting transaction 7
+2023-12-22 21:30:22,864 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,864 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:22,864 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:22,864 [DEBUG] Running transaction 8
+2023-12-22 21:30:22,864 [DEBUG] SEND: 0x0 0x8 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:22,864 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:22,864 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:22,910 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:22,910 [DEBUG] RECV: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:22,910 [DEBUG] Processing: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:22,910 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:22,910 [DEBUG] Adding transaction 8
+2023-12-22 21:30:22,910 [DEBUG] Getting transaction 8
+2023-12-22 21:30:22,910 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:22,911 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:22,911 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:23,947 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:23,948 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:23,948 [DEBUG] Running transaction 21
+2023-12-22 21:30:23,948 [DEBUG] SEND: 0x0 0x15 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:23,948 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:23,948 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:23,989 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:23,989 [DEBUG] RECV: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:23,989 [DEBUG] Processing: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:23,989 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:23,990 [DEBUG] Adding transaction 21
+2023-12-22 21:30:23,990 [DEBUG] Getting transaction 21
+2023-12-22 21:30:23,990 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:23,990 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:23,990 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:23,990 [DEBUG] Running transaction 22
+2023-12-22 21:30:23,990 [DEBUG] SEND: 0x0 0x16 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:23,990 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:23,990 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,036 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,036 [DEBUG] RECV: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:24,036 [DEBUG] Processing: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:24,036 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:24,036 [DEBUG] Adding transaction 22
+2023-12-22 21:30:24,036 [DEBUG] Getting transaction 22
+2023-12-22 21:30:24,037 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,037 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:24,037 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:24,037 [DEBUG] Running transaction 23
+2023-12-22 21:30:24,037 [DEBUG] SEND: 0x0 0x17 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:24,037 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:24,037 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,083 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,083 [DEBUG] RECV: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:24,083 [DEBUG] Processing: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:24,084 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:24,084 [DEBUG] Adding transaction 23
+2023-12-22 21:30:24,084 [DEBUG] Getting transaction 23
+2023-12-22 21:30:24,084 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,084 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:24,084 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:24,085 [DEBUG] Running transaction 24
+2023-12-22 21:30:24,085 [DEBUG] SEND: 0x0 0x18 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:24,085 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:24,085 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,129 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,129 [DEBUG] RECV: 0x0 0x18 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:24,129 [DEBUG] Processing: 0x0 0x18 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:24,130 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:24,130 [DEBUG] Adding transaction 24
+2023-12-22 21:30:24,130 [DEBUG] Getting transaction 24
+2023-12-22 21:30:24,130 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,130 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:24,130 [DEBUG] Running transaction 25
+2023-12-22 21:30:24,131 [DEBUG] SEND: 0x0 0x19 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:24,131 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:24,131 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,176 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,177 [DEBUG] RECV: 0x0 0x19 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:24,177 [DEBUG] Processing: 0x0 0x19 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:24,177 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:24,178 [DEBUG] Adding transaction 25
+2023-12-22 21:30:24,178 [DEBUG] Getting transaction 25
+2023-12-22 21:30:24,178 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,178 [DEBUG] [380, 0]
+2023-12-22 21:30:24,179 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:24,179 [DEBUG] Running transaction 9
+2023-12-22 21:30:24,179 [DEBUG] SEND: 0x0 0x9 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:24,179 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:24,180 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,223 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,223 [DEBUG] RECV: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:24,223 [DEBUG] Processing: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:24,224 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:24,224 [DEBUG] Adding transaction 9
+2023-12-22 21:30:24,224 [DEBUG] Getting transaction 9
+2023-12-22 21:30:24,224 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,224 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:24,224 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:24,224 [DEBUG] Running transaction 10
+2023-12-22 21:30:24,224 [DEBUG] SEND: 0x0 0xa 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:24,225 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:24,225 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:24,271 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:24,271 [DEBUG] RECV: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:24,271 [DEBUG] Processing: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:24,271 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:24,271 [DEBUG] Adding transaction 10
+2023-12-22 21:30:24,271 [DEBUG] Getting transaction 10
+2023-12-22 21:30:24,271 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:24,271 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:24,271 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:25,301 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:25,301 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,301 [DEBUG] Running transaction 26
+2023-12-22 21:30:25,301 [DEBUG] SEND: 0x0 0x1a 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:25,301 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,301 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,351 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,351 [DEBUG] RECV: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:25,351 [DEBUG] Processing: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:25,351 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:25,351 [DEBUG] Adding transaction 26
+2023-12-22 21:30:25,351 [DEBUG] Getting transaction 26
+2023-12-22 21:30:25,351 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,351 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:25,351 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,352 [DEBUG] Running transaction 27
+2023-12-22 21:30:25,352 [DEBUG] SEND: 0x0 0x1b 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:25,352 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,352 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,397 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,397 [DEBUG] RECV: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:25,397 [DEBUG] Processing: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:25,397 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:25,397 [DEBUG] Adding transaction 27
+2023-12-22 21:30:25,398 [DEBUG] Getting transaction 27
+2023-12-22 21:30:25,398 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,398 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:25,398 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,398 [DEBUG] Running transaction 28
+2023-12-22 21:30:25,398 [DEBUG] SEND: 0x0 0x1c 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:25,398 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,398 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,444 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,445 [DEBUG] RECV: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:25,445 [DEBUG] Processing: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:25,445 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:25,445 [DEBUG] Adding transaction 28
+2023-12-22 21:30:25,446 [DEBUG] Getting transaction 28
+2023-12-22 21:30:25,446 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,446 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:25,446 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,446 [DEBUG] Running transaction 29
+2023-12-22 21:30:25,447 [DEBUG] SEND: 0x0 0x1d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:25,447 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,447 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,492 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,492 [DEBUG] RECV: 0x0 0x1d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:25,492 [DEBUG] Processing: 0x0 0x1d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:25,493 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:25,493 [DEBUG] Adding transaction 29
+2023-12-22 21:30:25,493 [DEBUG] Getting transaction 29
+2023-12-22 21:30:25,493 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,493 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,493 [DEBUG] Running transaction 30
+2023-12-22 21:30:25,493 [DEBUG] SEND: 0x0 0x1e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:25,493 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,494 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,540 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,540 [DEBUG] RECV: 0x0 0x1e 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:25,540 [DEBUG] Processing: 0x0 0x1e 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:25,540 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:25,540 [DEBUG] Adding transaction 30
+2023-12-22 21:30:25,540 [DEBUG] Getting transaction 30
+2023-12-22 21:30:25,540 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,540 [DEBUG] [380, 0]
+2023-12-22 21:30:25,540 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,540 [DEBUG] Running transaction 11
+2023-12-22 21:30:25,540 [DEBUG] SEND: 0x0 0xb 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:25,540 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,541 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,585 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,585 [DEBUG] RECV: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:25,585 [DEBUG] Processing: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:25,586 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:25,586 [DEBUG] Adding transaction 11
+2023-12-22 21:30:25,586 [DEBUG] Getting transaction 11
+2023-12-22 21:30:25,586 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,586 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:25,586 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:25,586 [DEBUG] Running transaction 12
+2023-12-22 21:30:25,586 [DEBUG] SEND: 0x0 0xc 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:25,587 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:25,587 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:25,632 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:25,632 [DEBUG] RECV: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:25,632 [DEBUG] Processing: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:25,632 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:25,632 [DEBUG] Adding transaction 12
+2023-12-22 21:30:25,632 [DEBUG] Getting transaction 12
+2023-12-22 21:30:25,633 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:25,633 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:25,633 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:30:26,656 [DEBUG] [65459, 200, 450]
+2023-12-22 21:30:26,656 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,656 [DEBUG] Running transaction 31
+2023-12-22 21:30:26,656 [DEBUG] SEND: 0x0 0x1f 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:30:26,656 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,656 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,714 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,714 [DEBUG] RECV: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:26,714 [DEBUG] Processing: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:26,714 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:26,714 [DEBUG] Adding transaction 31
+2023-12-22 21:30:26,714 [DEBUG] Getting transaction 31
+2023-12-22 21:30:26,714 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,715 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:30:26,715 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,715 [DEBUG] Running transaction 32
+2023-12-22 21:30:26,715 [DEBUG] SEND: 0x0 0x20 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:30:26,715 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,715 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,760 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,760 [DEBUG] RECV: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:26,760 [DEBUG] Processing: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:30:26,760 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:26,760 [DEBUG] Adding transaction 32
+2023-12-22 21:30:26,760 [DEBUG] Getting transaction 32
+2023-12-22 21:30:26,760 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,760 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:30:26,760 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,760 [DEBUG] Running transaction 33
+2023-12-22 21:30:26,761 [DEBUG] SEND: 0x0 0x21 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:30:26,761 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,761 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,807 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,807 [DEBUG] RECV: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:26,807 [DEBUG] Processing: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:30:26,807 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:26,807 [DEBUG] Adding transaction 33
+2023-12-22 21:30:26,807 [DEBUG] Getting transaction 33
+2023-12-22 21:30:26,807 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,807 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:30:26,807 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,807 [DEBUG] Running transaction 34
+2023-12-22 21:30:26,808 [DEBUG] SEND: 0x0 0x22 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:30:26,808 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,808 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,854 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,854 [DEBUG] RECV: 0x0 0x22 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:26,854 [DEBUG] Processing: 0x0 0x22 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:30:26,855 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:26,855 [DEBUG] Adding transaction 34
+2023-12-22 21:30:26,855 [DEBUG] Getting transaction 34
+2023-12-22 21:30:26,855 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,855 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,855 [DEBUG] Running transaction 35
+2023-12-22 21:30:26,855 [DEBUG] SEND: 0x0 0x23 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:30:26,855 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,855 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,902 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,902 [DEBUG] RECV: 0x0 0x23 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:26,902 [DEBUG] Processing: 0x0 0x23 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:30:26,902 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:30:26,902 [DEBUG] Adding transaction 35
+2023-12-22 21:30:26,902 [DEBUG] Getting transaction 35
+2023-12-22 21:30:26,902 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,902 [DEBUG] [380, 0]
+2023-12-22 21:30:26,902 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,902 [DEBUG] Running transaction 13
+2023-12-22 21:30:26,902 [DEBUG] SEND: 0x0 0xd 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:30:26,903 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,903 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,948 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,948 [DEBUG] RECV: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:26,948 [DEBUG] Processing: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:30:26,948 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:26,949 [DEBUG] Adding transaction 13
+2023-12-22 21:30:26,949 [DEBUG] Getting transaction 13
+2023-12-22 21:30:26,949 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,949 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:30:26,949 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:30:26,949 [DEBUG] Running transaction 14
+2023-12-22 21:30:26,949 [DEBUG] SEND: 0x0 0xe 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:30:26,949 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:30:26,949 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:30:26,997 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:30:26,997 [DEBUG] RECV: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:26,997 [DEBUG] Processing: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:30:26,997 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:30:26,997 [DEBUG] Adding transaction 14
+2023-12-22 21:30:26,997 [DEBUG] Getting transaction 14
+2023-12-22 21:30:26,997 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:30:26,997 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:30:26,997 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:35,143 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:35,149 [DEBUG] Connection to Modbus server established. Socket ('127.0.0.1', 28144)
+2023-12-22 21:59:35,150 [DEBUG] Current transaction state - IDLE
+2023-12-22 21:59:35,150 [DEBUG] Running transaction 1
+2023-12-22 21:59:35,150 [DEBUG] SEND: 0x0 0x1 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:35,150 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,150 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,195 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,195 [DEBUG] RECV: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:35,195 [DEBUG] Processing: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:35,196 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:35,196 [DEBUG] Adding transaction 1
+2023-12-22 21:59:35,196 [DEBUG] Getting transaction 1
+2023-12-22 21:59:35,196 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,196 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:35,196 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:35,196 [DEBUG] Running transaction 2
+2023-12-22 21:59:35,196 [DEBUG] SEND: 0x0 0x2 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:35,196 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,196 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,242 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,242 [DEBUG] RECV: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:35,242 [DEBUG] Processing: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:35,242 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:35,243 [DEBUG] Adding transaction 2
+2023-12-22 21:59:35,243 [DEBUG] Getting transaction 2
+2023-12-22 21:59:35,243 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,243 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:35,243 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:35,243 [DEBUG] Running transaction 3
+2023-12-22 21:59:35,243 [DEBUG] SEND: 0x0 0x3 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:35,244 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,244 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,288 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,288 [DEBUG] RECV: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:35,288 [DEBUG] Processing: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:35,288 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:35,288 [DEBUG] Adding transaction 3
+2023-12-22 21:59:35,288 [DEBUG] Getting transaction 3
+2023-12-22 21:59:35,288 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,289 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:35,289 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:35,289 [DEBUG] Running transaction 4
+2023-12-22 21:59:35,289 [DEBUG] SEND: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:35,289 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,289 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,336 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,336 [DEBUG] RECV: 0x0 0x4 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:35,336 [DEBUG] Processing: 0x0 0x4 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:35,337 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:35,337 [DEBUG] Adding transaction 4
+2023-12-22 21:59:35,337 [DEBUG] Getting transaction 4
+2023-12-22 21:59:35,337 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,337 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:35,337 [DEBUG] Running transaction 5
+2023-12-22 21:59:35,337 [DEBUG] SEND: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:35,337 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,338 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,383 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,383 [DEBUG] RECV: 0x0 0x5 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:35,383 [DEBUG] Processing: 0x0 0x5 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:35,384 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:35,384 [DEBUG] Adding transaction 5
+2023-12-22 21:59:35,384 [DEBUG] Getting transaction 5
+2023-12-22 21:59:35,384 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,384 [DEBUG] [380, 0]
+2023-12-22 21:59:35,385 [DEBUG] Connection to Modbus server established. Socket ('127.0.0.1', 28145)
+2023-12-22 21:59:35,385 [DEBUG] Current transaction state - IDLE
+2023-12-22 21:59:35,386 [DEBUG] Running transaction 1
+2023-12-22 21:59:35,386 [DEBUG] SEND: 0x0 0x1 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:35,386 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,386 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,431 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,431 [DEBUG] RECV: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:35,431 [DEBUG] Processing: 0x0 0x1 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:35,431 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:35,431 [DEBUG] Adding transaction 1
+2023-12-22 21:59:35,432 [DEBUG] Getting transaction 1
+2023-12-22 21:59:35,432 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,432 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:35,432 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:35,432 [DEBUG] Running transaction 2
+2023-12-22 21:59:35,432 [DEBUG] SEND: 0x0 0x2 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:35,432 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:35,432 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:35,477 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:35,477 [DEBUG] RECV: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:35,477 [DEBUG] Processing: 0x0 0x2 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:35,477 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:35,477 [DEBUG] Adding transaction 2
+2023-12-22 21:59:35,477 [DEBUG] Getting transaction 2
+2023-12-22 21:59:35,477 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:35,477 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:35,477 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:36,510 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:36,510 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,510 [DEBUG] Running transaction 6
+2023-12-22 21:59:36,510 [DEBUG] SEND: 0x0 0x6 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:36,510 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,510 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,558 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,559 [DEBUG] RECV: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:36,559 [DEBUG] Processing: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:36,559 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:36,560 [DEBUG] Adding transaction 6
+2023-12-22 21:59:36,560 [DEBUG] Getting transaction 6
+2023-12-22 21:59:36,560 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,560 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:36,561 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,561 [DEBUG] Running transaction 7
+2023-12-22 21:59:36,561 [DEBUG] SEND: 0x0 0x7 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:36,561 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,562 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,605 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,605 [DEBUG] RECV: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:36,605 [DEBUG] Processing: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:36,605 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:36,605 [DEBUG] Adding transaction 7
+2023-12-22 21:59:36,605 [DEBUG] Getting transaction 7
+2023-12-22 21:59:36,606 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,606 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:36,606 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,606 [DEBUG] Running transaction 8
+2023-12-22 21:59:36,606 [DEBUG] SEND: 0x0 0x8 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:36,606 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,606 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,652 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,652 [DEBUG] RECV: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:36,652 [DEBUG] Processing: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:36,652 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:36,652 [DEBUG] Adding transaction 8
+2023-12-22 21:59:36,652 [DEBUG] Getting transaction 8
+2023-12-22 21:59:36,652 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,652 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:36,653 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,653 [DEBUG] Running transaction 9
+2023-12-22 21:59:36,653 [DEBUG] SEND: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:36,653 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,653 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,698 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,698 [DEBUG] RECV: 0x0 0x9 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:36,698 [DEBUG] Processing: 0x0 0x9 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:36,699 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:36,699 [DEBUG] Adding transaction 9
+2023-12-22 21:59:36,699 [DEBUG] Getting transaction 9
+2023-12-22 21:59:36,699 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,699 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,699 [DEBUG] Running transaction 10
+2023-12-22 21:59:36,699 [DEBUG] SEND: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:36,699 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,699 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,745 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,746 [DEBUG] RECV: 0x0 0xa 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:36,746 [DEBUG] Processing: 0x0 0xa 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:36,746 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:36,747 [DEBUG] Adding transaction 10
+2023-12-22 21:59:36,747 [DEBUG] Getting transaction 10
+2023-12-22 21:59:36,747 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,748 [DEBUG] [380, 0]
+2023-12-22 21:59:36,748 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,748 [DEBUG] Running transaction 3
+2023-12-22 21:59:36,749 [DEBUG] SEND: 0x0 0x3 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:36,749 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,749 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,793 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,794 [DEBUG] RECV: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:36,794 [DEBUG] Processing: 0x0 0x3 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:36,794 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:36,795 [DEBUG] Adding transaction 3
+2023-12-22 21:59:36,795 [DEBUG] Getting transaction 3
+2023-12-22 21:59:36,795 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,795 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:36,796 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:36,796 [DEBUG] Running transaction 4
+2023-12-22 21:59:36,796 [DEBUG] SEND: 0x0 0x4 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:36,796 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:36,797 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:36,840 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:36,841 [DEBUG] RECV: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:36,841 [DEBUG] Processing: 0x0 0x4 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:36,841 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:36,842 [DEBUG] Adding transaction 4
+2023-12-22 21:59:36,842 [DEBUG] Getting transaction 4
+2023-12-22 21:59:36,842 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:36,843 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:36,843 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:37,900 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:37,901 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:37,901 [DEBUG] Running transaction 11
+2023-12-22 21:59:37,901 [DEBUG] SEND: 0x0 0xb 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:37,901 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:37,901 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:37,964 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:37,964 [DEBUG] RECV: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:37,964 [DEBUG] Processing: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:37,964 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:37,964 [DEBUG] Adding transaction 11
+2023-12-22 21:59:37,964 [DEBUG] Getting transaction 11
+2023-12-22 21:59:37,964 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:37,964 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:37,964 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:37,965 [DEBUG] Running transaction 12
+2023-12-22 21:59:37,965 [DEBUG] SEND: 0x0 0xc 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:37,965 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:37,965 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,011 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,011 [DEBUG] RECV: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:38,011 [DEBUG] Processing: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:38,011 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:38,011 [DEBUG] Adding transaction 12
+2023-12-22 21:59:38,011 [DEBUG] Getting transaction 12
+2023-12-22 21:59:38,011 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,011 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:38,011 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:38,011 [DEBUG] Running transaction 13
+2023-12-22 21:59:38,011 [DEBUG] SEND: 0x0 0xd 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:38,012 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:38,012 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,057 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,057 [DEBUG] RECV: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:38,057 [DEBUG] Processing: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:38,057 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:38,057 [DEBUG] Adding transaction 13
+2023-12-22 21:59:38,057 [DEBUG] Getting transaction 13
+2023-12-22 21:59:38,058 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,058 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:38,058 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:38,058 [DEBUG] Running transaction 14
+2023-12-22 21:59:38,058 [DEBUG] SEND: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:38,058 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:38,058 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,104 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,104 [DEBUG] RECV: 0x0 0xe 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:38,104 [DEBUG] Processing: 0x0 0xe 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:38,104 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:38,104 [DEBUG] Adding transaction 14
+2023-12-22 21:59:38,104 [DEBUG] Getting transaction 14
+2023-12-22 21:59:38,104 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,104 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:38,104 [DEBUG] Running transaction 15
+2023-12-22 21:59:38,104 [DEBUG] SEND: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:38,105 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:38,105 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,150 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,150 [DEBUG] RECV: 0x0 0xf 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:38,150 [DEBUG] Processing: 0x0 0xf 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:38,150 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:38,150 [DEBUG] Adding transaction 15
+2023-12-22 21:59:38,150 [DEBUG] Getting transaction 15
+2023-12-22 21:59:38,150 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,150 [DEBUG] [380, 0]
+2023-12-22 21:59:38,150 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:38,151 [DEBUG] Running transaction 5
+2023-12-22 21:59:38,151 [DEBUG] SEND: 0x0 0x5 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:38,151 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:38,151 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,197 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,197 [DEBUG] RECV: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:38,197 [DEBUG] Processing: 0x0 0x5 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:38,197 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:38,198 [DEBUG] Adding transaction 5
+2023-12-22 21:59:38,198 [DEBUG] Getting transaction 5
+2023-12-22 21:59:38,198 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,198 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:38,198 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:38,198 [DEBUG] Running transaction 6
+2023-12-22 21:59:38,198 [DEBUG] SEND: 0x0 0x6 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:38,198 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:38,198 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:38,243 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:38,243 [DEBUG] RECV: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:38,243 [DEBUG] Processing: 0x0 0x6 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:38,243 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:38,243 [DEBUG] Adding transaction 6
+2023-12-22 21:59:38,243 [DEBUG] Getting transaction 6
+2023-12-22 21:59:38,243 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:38,243 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:38,243 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:39,275 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:39,275 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,275 [DEBUG] Running transaction 16
+2023-12-22 21:59:39,275 [DEBUG] SEND: 0x0 0x10 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:39,275 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,276 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,322 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,322 [DEBUG] RECV: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:39,322 [DEBUG] Processing: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:39,322 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:39,322 [DEBUG] Adding transaction 16
+2023-12-22 21:59:39,322 [DEBUG] Getting transaction 16
+2023-12-22 21:59:39,322 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,323 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:39,323 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,323 [DEBUG] Running transaction 17
+2023-12-22 21:59:39,323 [DEBUG] SEND: 0x0 0x11 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:39,323 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,323 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,369 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,369 [DEBUG] RECV: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:39,369 [DEBUG] Processing: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:39,369 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:39,369 [DEBUG] Adding transaction 17
+2023-12-22 21:59:39,369 [DEBUG] Getting transaction 17
+2023-12-22 21:59:39,369 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,369 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:39,369 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,369 [DEBUG] Running transaction 18
+2023-12-22 21:59:39,369 [DEBUG] SEND: 0x0 0x12 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:39,370 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,370 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,416 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,416 [DEBUG] RECV: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:39,416 [DEBUG] Processing: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:39,416 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:39,416 [DEBUG] Adding transaction 18
+2023-12-22 21:59:39,416 [DEBUG] Getting transaction 18
+2023-12-22 21:59:39,416 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,417 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:39,417 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,417 [DEBUG] Running transaction 19
+2023-12-22 21:59:39,417 [DEBUG] SEND: 0x0 0x13 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:39,417 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,417 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,463 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,463 [DEBUG] RECV: 0x0 0x13 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:39,463 [DEBUG] Processing: 0x0 0x13 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:39,463 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:39,464 [DEBUG] Adding transaction 19
+2023-12-22 21:59:39,464 [DEBUG] Getting transaction 19
+2023-12-22 21:59:39,464 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,464 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,464 [DEBUG] Running transaction 20
+2023-12-22 21:59:39,464 [DEBUG] SEND: 0x0 0x14 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:39,464 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,464 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,510 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,510 [DEBUG] RECV: 0x0 0x14 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:39,510 [DEBUG] Processing: 0x0 0x14 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:39,510 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:39,510 [DEBUG] Adding transaction 20
+2023-12-22 21:59:39,511 [DEBUG] Getting transaction 20
+2023-12-22 21:59:39,511 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,511 [DEBUG] [380, 0]
+2023-12-22 21:59:39,511 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,511 [DEBUG] Running transaction 7
+2023-12-22 21:59:39,511 [DEBUG] SEND: 0x0 0x7 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:39,511 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,511 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,557 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,557 [DEBUG] RECV: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:39,557 [DEBUG] Processing: 0x0 0x7 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:39,557 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:39,557 [DEBUG] Adding transaction 7
+2023-12-22 21:59:39,557 [DEBUG] Getting transaction 7
+2023-12-22 21:59:39,557 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,558 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:39,558 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:39,558 [DEBUG] Running transaction 8
+2023-12-22 21:59:39,558 [DEBUG] SEND: 0x0 0x8 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:39,558 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:39,558 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:39,604 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:39,604 [DEBUG] RECV: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:39,604 [DEBUG] Processing: 0x0 0x8 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:39,605 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:39,605 [DEBUG] Adding transaction 8
+2023-12-22 21:59:39,605 [DEBUG] Getting transaction 8
+2023-12-22 21:59:39,605 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:39,605 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:39,605 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:40,645 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:40,645 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,645 [DEBUG] Running transaction 21
+2023-12-22 21:59:40,645 [DEBUG] SEND: 0x0 0x15 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:40,645 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,645 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,683 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,683 [DEBUG] RECV: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:40,683 [DEBUG] Processing: 0x0 0x15 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:40,683 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:40,683 [DEBUG] Adding transaction 21
+2023-12-22 21:59:40,683 [DEBUG] Getting transaction 21
+2023-12-22 21:59:40,683 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,683 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:40,683 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,684 [DEBUG] Running transaction 22
+2023-12-22 21:59:40,684 [DEBUG] SEND: 0x0 0x16 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:40,684 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,684 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,730 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,730 [DEBUG] RECV: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:40,730 [DEBUG] Processing: 0x0 0x16 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:40,730 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:40,730 [DEBUG] Adding transaction 22
+2023-12-22 21:59:40,730 [DEBUG] Getting transaction 22
+2023-12-22 21:59:40,731 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,731 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:40,731 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,731 [DEBUG] Running transaction 23
+2023-12-22 21:59:40,731 [DEBUG] SEND: 0x0 0x17 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:40,731 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,731 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,776 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,776 [DEBUG] RECV: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:40,776 [DEBUG] Processing: 0x0 0x17 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:40,777 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:40,777 [DEBUG] Adding transaction 23
+2023-12-22 21:59:40,777 [DEBUG] Getting transaction 23
+2023-12-22 21:59:40,777 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,777 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:40,777 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,777 [DEBUG] Running transaction 24
+2023-12-22 21:59:40,777 [DEBUG] SEND: 0x0 0x18 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:40,778 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,778 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,822 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,823 [DEBUG] RECV: 0x0 0x18 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:40,823 [DEBUG] Processing: 0x0 0x18 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:40,823 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:40,824 [DEBUG] Adding transaction 24
+2023-12-22 21:59:40,824 [DEBUG] Getting transaction 24
+2023-12-22 21:59:40,824 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,825 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,825 [DEBUG] Running transaction 25
+2023-12-22 21:59:40,825 [DEBUG] SEND: 0x0 0x19 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:40,825 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,826 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,869 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,869 [DEBUG] RECV: 0x0 0x19 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:40,869 [DEBUG] Processing: 0x0 0x19 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:40,870 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:40,870 [DEBUG] Adding transaction 25
+2023-12-22 21:59:40,870 [DEBUG] Getting transaction 25
+2023-12-22 21:59:40,870 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,870 [DEBUG] [380, 0]
+2023-12-22 21:59:40,870 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,870 [DEBUG] Running transaction 9
+2023-12-22 21:59:40,871 [DEBUG] SEND: 0x0 0x9 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:40,871 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,871 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,916 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,916 [DEBUG] RECV: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:40,916 [DEBUG] Processing: 0x0 0x9 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:40,916 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:40,916 [DEBUG] Adding transaction 9
+2023-12-22 21:59:40,916 [DEBUG] Getting transaction 9
+2023-12-22 21:59:40,917 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,917 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:40,917 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:40,917 [DEBUG] Running transaction 10
+2023-12-22 21:59:40,917 [DEBUG] SEND: 0x0 0xa 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:40,917 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:40,917 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:40,962 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:40,962 [DEBUG] RECV: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:40,962 [DEBUG] Processing: 0x0 0xa 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:40,962 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:40,963 [DEBUG] Adding transaction 10
+2023-12-22 21:59:40,963 [DEBUG] Getting transaction 10
+2023-12-22 21:59:40,963 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:40,963 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:40,963 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:41,979 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:41,979 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:41,979 [DEBUG] Running transaction 26
+2023-12-22 21:59:41,979 [DEBUG] SEND: 0x0 0x1a 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:41,979 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:41,979 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,044 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,044 [DEBUG] RECV: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:42,044 [DEBUG] Processing: 0x0 0x1a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:42,044 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:42,045 [DEBUG] Adding transaction 26
+2023-12-22 21:59:42,045 [DEBUG] Getting transaction 26
+2023-12-22 21:59:42,045 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,045 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:42,045 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,045 [DEBUG] Running transaction 27
+2023-12-22 21:59:42,045 [DEBUG] SEND: 0x0 0x1b 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:42,045 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,045 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,092 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,092 [DEBUG] RECV: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:42,092 [DEBUG] Processing: 0x0 0x1b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:42,093 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:42,093 [DEBUG] Adding transaction 27
+2023-12-22 21:59:42,093 [DEBUG] Getting transaction 27
+2023-12-22 21:59:42,093 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,093 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:42,093 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,093 [DEBUG] Running transaction 28
+2023-12-22 21:59:42,094 [DEBUG] SEND: 0x0 0x1c 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:42,094 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,094 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,138 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,138 [DEBUG] RECV: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:42,138 [DEBUG] Processing: 0x0 0x1c 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:42,139 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:42,139 [DEBUG] Adding transaction 28
+2023-12-22 21:59:42,139 [DEBUG] Getting transaction 28
+2023-12-22 21:59:42,139 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,139 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:42,139 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,139 [DEBUG] Running transaction 29
+2023-12-22 21:59:42,139 [DEBUG] SEND: 0x0 0x1d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:42,139 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,139 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,186 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,186 [DEBUG] RECV: 0x0 0x1d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:42,186 [DEBUG] Processing: 0x0 0x1d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:42,186 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:42,186 [DEBUG] Adding transaction 29
+2023-12-22 21:59:42,186 [DEBUG] Getting transaction 29
+2023-12-22 21:59:42,186 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,186 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,186 [DEBUG] Running transaction 30
+2023-12-22 21:59:42,186 [DEBUG] SEND: 0x0 0x1e 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:42,186 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,187 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,233 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,233 [DEBUG] RECV: 0x0 0x1e 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:42,233 [DEBUG] Processing: 0x0 0x1e 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:42,233 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:42,234 [DEBUG] Adding transaction 30
+2023-12-22 21:59:42,234 [DEBUG] Getting transaction 30
+2023-12-22 21:59:42,234 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,234 [DEBUG] [380, 0]
+2023-12-22 21:59:42,234 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,234 [DEBUG] Running transaction 11
+2023-12-22 21:59:42,234 [DEBUG] SEND: 0x0 0xb 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:42,234 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,234 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,280 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,280 [DEBUG] RECV: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:42,280 [DEBUG] Processing: 0x0 0xb 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:42,281 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:42,281 [DEBUG] Adding transaction 11
+2023-12-22 21:59:42,281 [DEBUG] Getting transaction 11
+2023-12-22 21:59:42,281 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,281 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:42,281 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:42,281 [DEBUG] Running transaction 12
+2023-12-22 21:59:42,281 [DEBUG] SEND: 0x0 0xc 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:42,281 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:42,282 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:42,327 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:42,327 [DEBUG] RECV: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:42,327 [DEBUG] Processing: 0x0 0xc 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:42,327 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:42,328 [DEBUG] Adding transaction 12
+2023-12-22 21:59:42,328 [DEBUG] Getting transaction 12
+2023-12-22 21:59:42,328 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:42,328 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:42,328 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:43,343 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:43,343 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,343 [DEBUG] Running transaction 31
+2023-12-22 21:59:43,343 [DEBUG] SEND: 0x0 0x1f 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:43,343 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,343 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,406 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,406 [DEBUG] RECV: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:43,406 [DEBUG] Processing: 0x0 0x1f 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:43,406 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:43,406 [DEBUG] Adding transaction 31
+2023-12-22 21:59:43,406 [DEBUG] Getting transaction 31
+2023-12-22 21:59:43,407 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,407 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:43,407 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,407 [DEBUG] Running transaction 32
+2023-12-22 21:59:43,407 [DEBUG] SEND: 0x0 0x20 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:43,407 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,407 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,453 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,453 [DEBUG] RECV: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:43,453 [DEBUG] Processing: 0x0 0x20 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:43,453 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:43,453 [DEBUG] Adding transaction 32
+2023-12-22 21:59:43,453 [DEBUG] Getting transaction 32
+2023-12-22 21:59:43,453 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,453 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:43,454 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,454 [DEBUG] Running transaction 33
+2023-12-22 21:59:43,454 [DEBUG] SEND: 0x0 0x21 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:43,454 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,454 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,500 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,500 [DEBUG] RECV: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:43,500 [DEBUG] Processing: 0x0 0x21 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:43,501 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:43,501 [DEBUG] Adding transaction 33
+2023-12-22 21:59:43,501 [DEBUG] Getting transaction 33
+2023-12-22 21:59:43,501 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,501 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:43,501 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,501 [DEBUG] Running transaction 34
+2023-12-22 21:59:43,501 [DEBUG] SEND: 0x0 0x22 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:43,501 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,502 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,548 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,548 [DEBUG] RECV: 0x0 0x22 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:43,548 [DEBUG] Processing: 0x0 0x22 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:43,548 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:43,548 [DEBUG] Adding transaction 34
+2023-12-22 21:59:43,548 [DEBUG] Getting transaction 34
+2023-12-22 21:59:43,548 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,548 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,548 [DEBUG] Running transaction 35
+2023-12-22 21:59:43,548 [DEBUG] SEND: 0x0 0x23 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:43,548 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,548 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,594 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,594 [DEBUG] RECV: 0x0 0x23 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:43,594 [DEBUG] Processing: 0x0 0x23 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:43,595 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:43,595 [DEBUG] Adding transaction 35
+2023-12-22 21:59:43,595 [DEBUG] Getting transaction 35
+2023-12-22 21:59:43,595 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,595 [DEBUG] [380, 0]
+2023-12-22 21:59:43,595 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,595 [DEBUG] Running transaction 13
+2023-12-22 21:59:43,595 [DEBUG] SEND: 0x0 0xd 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:43,595 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,595 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,641 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,641 [DEBUG] RECV: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:43,641 [DEBUG] Processing: 0x0 0xd 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:43,641 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:43,641 [DEBUG] Adding transaction 13
+2023-12-22 21:59:43,641 [DEBUG] Getting transaction 13
+2023-12-22 21:59:43,641 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,641 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:43,642 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:43,642 [DEBUG] Running transaction 14
+2023-12-22 21:59:43,642 [DEBUG] SEND: 0x0 0xe 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:43,642 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:43,642 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:43,688 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:43,688 [DEBUG] RECV: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:43,689 [DEBUG] Processing: 0x0 0xe 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:43,689 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:43,689 [DEBUG] Adding transaction 14
+2023-12-22 21:59:43,689 [DEBUG] Getting transaction 14
+2023-12-22 21:59:43,689 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:43,689 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:43,689 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:44,735 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:44,735 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:44,735 [DEBUG] Running transaction 36
+2023-12-22 21:59:44,735 [DEBUG] SEND: 0x0 0x24 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:44,735 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:44,735 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:44,814 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:44,814 [DEBUG] RECV: 0x0 0x24 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:44,814 [DEBUG] Processing: 0x0 0x24 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:44,814 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:44,814 [DEBUG] Adding transaction 36
+2023-12-22 21:59:44,814 [DEBUG] Getting transaction 36
+2023-12-22 21:59:44,814 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:44,814 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:44,815 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:44,815 [DEBUG] Running transaction 37
+2023-12-22 21:59:44,815 [DEBUG] SEND: 0x0 0x25 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:44,815 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:44,815 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:44,860 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:44,860 [DEBUG] RECV: 0x0 0x25 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:44,860 [DEBUG] Processing: 0x0 0x25 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:44,860 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:44,860 [DEBUG] Adding transaction 37
+2023-12-22 21:59:44,860 [DEBUG] Getting transaction 37
+2023-12-22 21:59:44,860 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:44,860 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:44,860 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:44,860 [DEBUG] Running transaction 38
+2023-12-22 21:59:44,860 [DEBUG] SEND: 0x0 0x26 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:44,861 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:44,861 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:44,908 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:44,908 [DEBUG] RECV: 0x0 0x26 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:44,908 [DEBUG] Processing: 0x0 0x26 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:44,908 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:44,908 [DEBUG] Adding transaction 38
+2023-12-22 21:59:44,908 [DEBUG] Getting transaction 38
+2023-12-22 21:59:44,908 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:44,908 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:44,908 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:44,908 [DEBUG] Running transaction 39
+2023-12-22 21:59:44,908 [DEBUG] SEND: 0x0 0x27 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:44,909 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:44,909 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:44,955 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:44,955 [DEBUG] RECV: 0x0 0x27 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:44,955 [DEBUG] Processing: 0x0 0x27 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:44,955 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:44,955 [DEBUG] Adding transaction 39
+2023-12-22 21:59:44,955 [DEBUG] Getting transaction 39
+2023-12-22 21:59:44,955 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:44,955 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:44,955 [DEBUG] Running transaction 40
+2023-12-22 21:59:44,955 [DEBUG] SEND: 0x0 0x28 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:44,956 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:44,956 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:45,003 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:45,003 [DEBUG] RECV: 0x0 0x28 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:45,003 [DEBUG] Processing: 0x0 0x28 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:45,003 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:45,003 [DEBUG] Adding transaction 40
+2023-12-22 21:59:45,003 [DEBUG] Getting transaction 40
+2023-12-22 21:59:45,003 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:45,003 [DEBUG] [380, 0]
+2023-12-22 21:59:45,003 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:45,003 [DEBUG] Running transaction 15
+2023-12-22 21:59:45,003 [DEBUG] SEND: 0x0 0xf 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:45,004 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:45,004 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:45,049 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:45,049 [DEBUG] RECV: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:45,049 [DEBUG] Processing: 0x0 0xf 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:45,049 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:45,049 [DEBUG] Adding transaction 15
+2023-12-22 21:59:45,049 [DEBUG] Getting transaction 15
+2023-12-22 21:59:45,049 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:45,049 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:45,049 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:45,049 [DEBUG] Running transaction 16
+2023-12-22 21:59:45,049 [DEBUG] SEND: 0x0 0x10 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:45,050 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:45,050 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:45,097 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:45,097 [DEBUG] RECV: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:45,097 [DEBUG] Processing: 0x0 0x10 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:45,097 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:45,097 [DEBUG] Adding transaction 16
+2023-12-22 21:59:45,097 [DEBUG] Getting transaction 16
+2023-12-22 21:59:45,097 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:45,097 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:45,097 [INFO] server_inputs: [38.0, 0.0]
+2023-12-22 21:59:46,117 [DEBUG] [65459, 200, 450]
+2023-12-22 21:59:46,117 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,117 [DEBUG] Running transaction 41
+2023-12-22 21:59:46,117 [DEBUG] SEND: 0x0 0x29 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0xff 0xb3
+2023-12-22 21:59:46,117 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,117 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,180 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,180 [DEBUG] RECV: 0x0 0x29 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:46,180 [DEBUG] Processing: 0x0 0x29 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:46,181 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:46,181 [DEBUG] Adding transaction 41
+2023-12-22 21:59:46,181 [DEBUG] Getting transaction 41
+2023-12-22 21:59:46,181 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,181 [INFO] Successfully wrote -7.7 to PLC register 1 for 127.0.0.1:502
+2023-12-22 21:59:46,181 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,181 [DEBUG] Running transaction 42
+2023-12-22 21:59:46,181 [DEBUG] SEND: 0x0 0x2a 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xa 0x0 0x1 0x2 0x0 0xc8
+2023-12-22 21:59:46,181 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,182 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,225 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,225 [DEBUG] RECV: 0x0 0x2a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:46,225 [DEBUG] Processing: 0x0 0x2a 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xa 0x0 0x1
+2023-12-22 21:59:46,225 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:46,225 [DEBUG] Adding transaction 42
+2023-12-22 21:59:46,225 [DEBUG] Getting transaction 42
+2023-12-22 21:59:46,225 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,225 [INFO] Successfully wrote 20.0 to PLC register 11 for 127.0.0.1:502
+2023-12-22 21:59:46,225 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,225 [DEBUG] Running transaction 43
+2023-12-22 21:59:46,226 [DEBUG] SEND: 0x0 0x2b 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0xb 0x0 0x1 0x2 0x1 0xc2
+2023-12-22 21:59:46,226 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,226 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,271 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,271 [DEBUG] RECV: 0x0 0x2b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:46,271 [DEBUG] Processing: 0x0 0x2b 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0xb 0x0 0x1
+2023-12-22 21:59:46,271 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:46,271 [DEBUG] Adding transaction 43
+2023-12-22 21:59:46,271 [DEBUG] Getting transaction 43
+2023-12-22 21:59:46,271 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,271 [INFO] Successfully wrote 45.0 to PLC register 12 for 127.0.0.1:502
+2023-12-22 21:59:46,271 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,272 [DEBUG] Running transaction 44
+2023-12-22 21:59:46,272 [DEBUG] SEND: 0x0 0x2c 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x3 0x0 0x1
+2023-12-22 21:59:46,272 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,272 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,318 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,318 [DEBUG] RECV: 0x0 0x2c 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:46,318 [DEBUG] Processing: 0x0 0x2c 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0xa
+2023-12-22 21:59:46,318 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:46,318 [DEBUG] Adding transaction 44
+2023-12-22 21:59:46,318 [DEBUG] Getting transaction 44
+2023-12-22 21:59:46,318 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,318 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,318 [DEBUG] Running transaction 45
+2023-12-22 21:59:46,318 [DEBUG] SEND: 0x0 0x2d 0x0 0x0 0x0 0x6 0x0 0x3 0x0 0x4 0x0 0x1
+2023-12-22 21:59:46,318 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,319 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,366 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,367 [DEBUG] RECV: 0x0 0x2d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:46,367 [DEBUG] Processing: 0x0 0x2d 0x0 0x0 0x0 0x5 0x0 0x3 0x2 0x0 0x14
+2023-12-22 21:59:46,367 [DEBUG] Factory Response[ReadHoldingRegistersResponse': 3]
+2023-12-22 21:59:46,367 [DEBUG] Adding transaction 45
+2023-12-22 21:59:46,367 [DEBUG] Getting transaction 45
+2023-12-22 21:59:46,367 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,367 [DEBUG] [380, 0]
+2023-12-22 21:59:46,367 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,367 [DEBUG] Running transaction 17
+2023-12-22 21:59:46,367 [DEBUG] SEND: 0x0 0x11 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x0 0x0 0x1 0x2 0x1 0x7c
+2023-12-22 21:59:46,367 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,368 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,413 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,413 [DEBUG] RECV: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:46,413 [DEBUG] Processing: 0x0 0x11 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x0 0x0 0x1
+2023-12-22 21:59:46,413 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:46,413 [DEBUG] Adding transaction 17
+2023-12-22 21:59:46,413 [DEBUG] Getting transaction 17
+2023-12-22 21:59:46,413 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,413 [INFO] Successfully wrote 38.0 to PLC register 1 for 127.0.0.1:503
+2023-12-22 21:59:46,413 [DEBUG] Current transaction state - TRANSACTION_COMPLETE
+2023-12-22 21:59:46,414 [DEBUG] Running transaction 18
+2023-12-22 21:59:46,414 [DEBUG] SEND: 0x0 0x12 0x0 0x0 0x0 0x9 0x0 0x10 0x0 0x1 0x0 0x1 0x2 0x0 0x0
+2023-12-22 21:59:46,414 [DEBUG] New Transaction state "SENDING"
+2023-12-22 21:59:46,414 [DEBUG] Changing transaction state from "SENDING" to "WAITING FOR REPLY"
+2023-12-22 21:59:46,460 [DEBUG] Changing transaction state from "WAITING FOR REPLY" to "PROCESSING REPLY"
+2023-12-22 21:59:46,460 [DEBUG] RECV: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:46,460 [DEBUG] Processing: 0x0 0x12 0x0 0x0 0x0 0x6 0x0 0x10 0x0 0x1 0x0 0x1
+2023-12-22 21:59:46,460 [DEBUG] Factory Response[WriteMultipleRegistersResponse': 16]
+2023-12-22 21:59:46,460 [DEBUG] Adding transaction 18
+2023-12-22 21:59:46,460 [DEBUG] Getting transaction 18
+2023-12-22 21:59:46,460 [DEBUG] Changing transaction state from "PROCESSING REPLY" to "TRANSACTION_COMPLETE"
+2023-12-22 21:59:46,461 [INFO] Successfully wrote 0.0 to PLC register 2 for 127.0.0.1:503
+2023-12-22 21:59:46,461 [INFO] server_inputs: [38.0, 0.0]

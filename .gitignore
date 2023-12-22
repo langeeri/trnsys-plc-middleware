@@ -1,17 +1,45 @@
-__pycache__
-include/
-Lib/
-Scripts/
-Python/
-venv/
-*.log
-*.out
-*.dck
-*.lst
-*.BAL
-*.cfg
-*.jpg
-*.fig
-*.m
-*.xlsx
-*.mat
+# Virtual environment
+venv/               # Ignore virtual environment directory
+
+# Log and output files
+*.log               # Ignore log files
+*.out               # Ignore output files
+
+# Specific file types used in the project
+*.dck               # Ignore .dck files
+*.lst               # Ignore .lst files
+*.BAL               # Ignore .BAL files
+*.cfg               # Ignore .cfg files
+*.jpg               # Ignore .jpg files
+*.fig               # Ignore .fig files
+*.m                 # Ignore .m files
+*.xlsx              # Ignore .xlsx files
+*.mat               # Ignore .mat files
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Caches and intermediate build data
+.cache/
+.doctrees/
+build/
+
+# Sphinx output directory
+_build/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variable files
+.env
+
+# VS Code settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+

@@ -182,7 +182,7 @@ class ModbusServer:
         
         try: 
             for addressR in self.r_registers:
-                responseR = self.client.read_holding_registers(addressR)
+                responseR = self.client.read_holding_registers(addressR-1)
                 registerValue = responseR.getRegister(0)
                 arrayOfResponses.append(registerValue)
 

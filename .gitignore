@@ -3,3 +3,9 @@ include/
 Lib/
 Scripts/
 Python/
+*.log
+*.out
+*.dck
+*.lst
+*.BAL
+*.cfg

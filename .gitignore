@@ -26,9 +26,8 @@ build/
 
 # Sphinx output directory
 _build/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
+docs/__pycache__/
+docs/_build/html/
 
 # Environment variable files
 .env

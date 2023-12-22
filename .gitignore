@@ -10,3 +10,8 @@ venv/
 *.lst
 *.BAL
 *.cfg
+*.jpg
+*.fig
+*.m
+*.xlsx
+*.mat

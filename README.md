@@ -62,3 +62,21 @@ try:
     Initialization(TRNData)
 except Exception as e:
     print(f"Error during initialization: {e}")
+```
+
+### Configuration
+The configuration for Modbus servers is specified in SERVER_CONFIGS. This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
+
+```python
+SERVER_CONFIGS = [
+    {
+        'host': '127.0.0.1',
+        'port': 502,
+        'rw_registers': [1, 11, 12],
+        'input_indexes': [5, 2, 3],
+        'r_registers': [4, 5],
+    },
+    # Add additional servers as needed
+]
+```
+

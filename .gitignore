@@ -3,6 +3,7 @@ include/
 Lib/
 Scripts/
 Python/
+venv/
 *.log
 *.out
 *.dck

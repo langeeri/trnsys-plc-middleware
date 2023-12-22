@@ -1,4 +1,4 @@
-# Communication middleware between TRNSYS and multiple PLCs
+# Communication middleware built on top of Type 1375
 
 This project provides middleware designed for use within Hardware-in-the-Loop testbeds in conjunction with TRNSYS simulations. It facilitates communication between TRNSYS and PLCs for both read-write and read-only operations. 
 

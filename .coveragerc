@@ -1,0 +1,10 @@
+[run]
+source = src, tests  # Include both source and tests directories
+omit =
+    venv/*  # Exclude virtual environment directory
+    tests/*  # Exclude test files
+    */__init__.py  # Exclude __init__.py files
+
+
+[html]
+directory = tests/coverage_html_report  

@@ -42,8 +42,8 @@ import time as osTime
 from typing import Dict, List, Union, Optional
 from pymodbus.client import ModbusTcpClient
 from pymodbus.payload import BinaryPayloadBuilder, Endian
-from src.server_config import SERVER_CONFIGS
-from src.middleware_config import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
+from server_config import SERVER_CONFIGS
+from middleware_config import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
 
 
 # --------------------------------------------------------------------------
@@ -377,7 +377,7 @@ def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> Non
             server_inputs = []
 
             for index in server.input_indexes:
-                if 0 < index < len(TRNinputs):
+                if 0 <= index < len(TRNinputs):
                     server_inputs.append(TRNinputs[index])
             server.write_inputs(server_inputs)
 

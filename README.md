@@ -7,13 +7,13 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 - [Introduction](#introduction)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Usage](#usage)
-  - [Initialization](#initialization)
-  - [Start Time](#start-time)
-  - [Iteration](#iteration)
-  - [End of Time Step](#end-of-time-step)
-  - [Last Call of Simulation](#last-call-of-simulation)
+- [Contents](#contents)
+  - [main.py](#mainpy)
+  - [middleware_config.py](#middleware_configpy)
+  - [server_manager.py](#server_managerpy)
+  - [server_config.py](#server_configpy)
 - [Configuration](#configuration)
+- [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -45,33 +45,50 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
     pip install -r requirements.txt
     ```
 
-## Usage
+## Contents
+Inside the 'src' folder, you will find the following files:
 
-Define inputs and outputs inside the Type 3157. For more information check Type´s 1375 and TRNSYS documentation.
-Configure ModBus servers inside your PLCS.
-Define all your ModBus servers via server manager.
-Define all your ModBus registers via server manager.
+### main.py
+This module provides functionality to interface with Modbus servers as part of a TRNSYS simulation. 
+It defines a `ModbusServer` class for handling connections, reading, and writing to Modbus servers. 
+The module is designed to work with TRNSYS by providing custom functions for different stages of 
+the simulation process such as initialization, time step processing, and simulation end.
+
+The module also includes helper functions for initializing Modbus server connections based on 
+configured settings and for handling various TRNSYS simulation stages like start time, iteration, 
+end of time step, and last call of the simulation.
+
+### middleware_config.py
+This module defines several constants that are used throughout the main.py module for ModBus server 
+implementation and its interaction with the TRNSYS simulation environment. These constants are crucial for 
+the proper functioning of the data exchange process and logging mechanisms.
+
+> [!IMPORTANT]
+> You need to change the SIMULATION_MODEL constant to match your simulation model name! For example, if
+> your TRNSYS simulation model is named MyModel.tpf, the constant should be SIMULATION_MODEL = 'MyModel'
+
+### server_manager.py
+This script contains definitions for managing Modbus server settings
+and a GUI for easy manipulation of these configurations. It includes
+functions for adding, deleting, and modifying server configurations.
+
+You should run the GUI and use it to define your ModBus servers. 
+The GUI will automatically update the server_config.py file, 
+which is then read by main.py. Alternatively, you can manually 
+modify the server_config.py configuration file to define your servers.
+
+### server_config.py
+This config file contains the `SERVER_CONFIGS` list, which consists of dictionaries. 
+Each dictionary represents the configuration of a Modbus server, including details 
+such as the host address, port number, and register information. 
+Four ModBus servers are defined here as examples.
 
 
-### Initialization
-
-To initialize Modbus servers, use the provided `Initialization` function. This function establishes connections to Modbus servers based on the provided configuration in `SERVER_CONFIGS`.
-
-```python
-from modbus_server import Initialization
-
-TRNData = {
-    'SIMULATION_MODEL': {'inputs': [0, 0, 0]}
-}
-
-try:
-    Initialization(TRNData)
-except Exception as e:
-    print(f"Error during initialization: {e}")
-```
-
-### Configuration
+## Configuration
 The configuration for Modbus servers is specified in SERVER_CONFIGS. This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
+
+> [!CAUTION]
+> Since this is Python, the indexing is zero-based.
 
 ```python
 SERVER_CONFIGS = [
@@ -86,3 +103,11 @@ SERVER_CONFIGS = [
 ]
 ```
 
+## Usage
+
+
+## Contributing
+Contributions are welcome! Follow the guidelines in CONTRIBUTING.md for details on how to submit your contribution to this project.
+
+## License
+This repository is licensed under the MIT License, allowing you to use and modify the code freely. Please review the license for more details.

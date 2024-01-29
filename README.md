@@ -132,19 +132,18 @@ SERVER_CONFIGS = [
 > [!CAUTION]
 > It is absolutelly necessary to keep all python files in the same directory and on the same level as your TRNSYS model !
 
-- Inside your TRNSYS model, open the Type 3157 card.
-- Inside the `Special Cards` tab, set the `Main Python Script` variable to `main.py`
-
 Example directory structure:
-
-- `src/`
+ `src/`
   - `.gitignore` 
   - `main.py` - *Main Python script*
   - `main.tpf` - *Your simulation model*
   - `middleware_config.py` - *Configuration for middleware*
   - `server_config.py` - *Configuration for the ModBus servers*
   - `server_manager.py` - *GUI for managing ModBus servers configurations*
- 
+
+Follow these steps:
+- Inside your TRNSYS model, open the Type 3157 card.
+- Inside the `Special Cards` tab, set the `Main Python Script` variable to `main.py` 
 - Inside the `middleware_config.py` modify the `SIMULATION_MODEL` constant to match your simulation model name, for example, if your
   TRNSYS simulation model is named `MyModel.tpf`, the constant should be `SIMULATION_MODEL = 'MyModel'`
 - Inside the `middleware_config.py` modify the `SIM_SLEEP` variable, if you need different data exchange update time step than the default one (60 seconds).

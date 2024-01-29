@@ -299,13 +299,6 @@ def Initialization(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> No
     This function initializes global variable 'servers' by connecting to servers
     based on the provided server configurations in SERVER_CONFIGS.
 
-    Examples
-    --------
-    >>> Initialization(TRNData)
-
-    The above example initializes servers using the configuration provided in
-    'TRNData'. 
-
     """
 
     global servers
@@ -389,13 +382,6 @@ def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> Non
     This function iterates over connected servers, writes inputs based on the provided
     TRNData, and reads outputs if applicable. It logs relevant information during the process.
 
-    Examples
-    --------
-    >>> EndOfTimeStep(TRNData)
-
-    The above example performs end-of-time-step actions on connected servers using the
-    values provided in 'TRNData'.
-
     """
     
     try:
@@ -443,12 +429,6 @@ def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]])
     Exception
         If an error occurs during the last call of the simulation, an exception is raised.
         The error is logged using the logging module.
-
-    Examples
-    --------
-    >>> trn_data = {'SIMULATION_MODEL': {'outputs': [0, 0, 0]}}
-    >>> LastCallOfSimulation(trn_data)
-    >>> # Perform actions at the end of the entire TRNSYS simulation
 
     """
 

@@ -21,6 +21,9 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 
 This project provides middleware designed for use within Hardware-in-the-Loop testbeds in conjunction with TRNSYS simulations. It allows for seamless communication between TRNSYS simulations and Modbus servers, enabling the exchange of data for read-write and read-only operations. The middleware functions as a Modbus client, while the PLCs functions as Modbus servers.
 
+The middleware serves a dual purpose: firstly, it enables bidirectional communication between the PLC and simulation software, and secondly, it synchronizes the time steps of the simulation and the PLC.
+
+The middleware is set up in such a way that ModBus clients are opened in the initialization phase of the simulation, meaning at the first call of Python from TRNSYS. At this stage, a connection to the ModBus servers, i.e., all the used PLCs, is established, but data exchange does not yet occur. It makes no sense to start data exchange before convergence is achieved in the computation of the current simulation step. The communication at this step occurs in a way that the Type 3157 component exchanges data with the communication middleware through a nested hashmap (a hashmap is a data type, it's an unordered set of key-value pairs, in Python it's often referred to as a dictionary), where the inputs from TRNSYS to Type 3157 in the current time step are sent as hashmap variables to the middleware. The data from the hashmap are sorted in the middleware and sent for writing to the registers of the respective PLCs. The data exchange in the opposite direction, i.e., from the PLCs through the middleware to TRNSYS, is resolved in a similar manner.
 
 ## Requirements
 
@@ -83,17 +86,21 @@ Each dictionary represents the configuration of a Modbus server, including detai
 such as the host address, port number, and register information. 
 Four ModBus servers are defined here as examples.
 
-
 ## Configuration
-The configuration for Modbus servers should be specified inside server_configs.py in SERVER_CONFIGS list. 
-This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
 
 > [!CAUTION]
 > Since this is Python, the indexing is zero-based.
 
-The server is specified like this, where host is the IP adress of the server, port is self-explanatory, rw_registers are
-read-write registers, input_indexes are indexes of the variables defined inside the Type 3157 that should be written 
-to the specified registers. Read registers are the ones that should be read and send back to TRNSYS.
+
+The configuration for Modbus servers should be specified inside `server_configs.py` in SERVER_CONFIGS list. 
+This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
+
+The server is specified with the following parameters: 
+- **host**: The IP address of the server.
+- **port**: The port number.
+- **rw_registers**: The read-write registers.
+- **input_indexes**: Indexes of the variables defined inside Type 3157, which should be written to the specified registers.
+- **r_registers**: Registers that should be read and the data sent back to TRNSYS.
 
 ```python
 SERVER_CONFIGS = [
@@ -104,11 +111,41 @@ SERVER_CONFIGS = [
         'input_indexes': [5, 2, 3],
         'r_registers': [4, 5],
     },
+  # If you dont need any read registers, keep the array blank like this:
+    {
+        'host': '127.0.0.1',
+        'port': 502,
+        'rw_registers': [1, 11, 12],
+        'input_indexes': [5, 2, 3],
+        'r_registers': [],
+    },
     # Add additional servers as needed
 ]
 ```
 
+> [!NOTE]
+> Regarding  **r_registers**, the current implementation of the middleware is designed to read data from multiple registers in a single PLC.
+> In scenarios where there are multiple PLCs involved, and data from all these PLCs needs to be sent back to TRNSYS,
+> additional modifications to the `main.py` file are necessary. Regarding **rw_registers**, reading and writing to/from multiple registers at multiple PLCs is
+> supported by the current implementation of the middleware. 
+
 ## Usage
+
+> [!CAUTION]
+> It is absolutelly necessary to keep all python files in the same directory and on the same level as your TRNSYS model !
+
+- Inside your TRNSYS model, open the Type 3157 card.
+- Inside the `Special Cards` tab, set the `Main Python Script` variable to `main.py`
+
+Example directory structure:
+
+- `src/`
+  - `.gitignore` 
+  - `main.py` - *Main Python script*
+  - `main.tpf` - *Your simulation model*
+  - `middleware_config.py` - *Configuration for middleware*
+  - `server_config.py` - *Configuration for the ModBus servers*
+  - `server_manager.py` - *GUI for managing ModBus servers configurations*
 
 
 ## Contributing

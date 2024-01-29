@@ -47,10 +47,10 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 
 ## Usage
 
-Define inputs and outputs inside the Type 1375. For more information check Type´s 1375 documentation.
-Configure ModBus servers inside your PLCS
-Start the server_manager.exe
-Define all your servers and registers
+Define inputs and outputs inside the Type 3157. For more information check Type´s 1375 and TRNSYS documentation.
+Configure ModBus servers inside your PLCS.
+Define all your ModBus servers via server manager.
+Define all your ModBus registers via server manager.
 
 
 ### Initialization

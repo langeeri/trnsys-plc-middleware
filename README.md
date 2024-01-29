@@ -133,8 +133,8 @@ SERVER_CONFIGS = [
 > It is absolutelly necessary to keep all python files in the same directory and on the same level as your TRNSYS model !
 
 Example directory structure:
+
  `src/`
-  - `.gitignore` 
   - `main.py` - *Main Python script*
   - `main.tpf` - *Your simulation model*
   - `middleware_config.py` - *Configuration for middleware*

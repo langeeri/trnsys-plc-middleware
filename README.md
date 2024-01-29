@@ -25,8 +25,8 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 ## Requirements
 
 - TRNSYS 18.04.0000 and higher
-- Type 1375
-- Python 3.10.x
+- Type 3157
+- Python 3.10.5
 - Required Python packages (specified in `requirements.txt`)
 - PLCs or other Modbus-compatible servers
 
@@ -35,8 +35,8 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/Middleware_Type1375.git
-    cd Middleware_Type1375
+    git clone https://github.com/langeeri/trnsys-plc-middleware.git
+    cd trnsys-plc-middleware
     ```
 
 2. Install the required packages:

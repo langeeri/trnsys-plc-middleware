@@ -155,5 +155,22 @@ The middleware is set up in such a way that ModBus clients are opened in the ini
 ## Contributing
 Contributions are welcome! Follow the guidelines in CONTRIBUTING.md for details on how to submit your contribution to this project.
 
+## Versioning
+This project follows Semantic Versioning (SemVer), which means the version number is structured as MAJOR.MINOR.PATCH.
+
+- [x] MAJOR version: Increased for incompatible changes to the TRNSYS Type structure or behavior.
+- [x] MINOR version: Incremented for the addition of new features while maintaining backward compatibility.
+- [x] PATCH version: Incremented for backward-compatible bug fixes or improvements.
+
+You can find the list of all available versions or releases for this project in the tags section. 
+
+> [!TIP]
+> We use Git tags to mark each release. For example, to check out version 1.0.0, you can use the following command:
+   ```git
+  git checkout tags/v1.0.0
+   ```
+## Authors:
+- [x] Erika Langerová (ČVUT UCEEB - RP2)
+
 ## License
 This repository is licensed under the MIT License, allowing you to use and modify the code freely. Please review the license for more details.

@@ -1,50 +1,85 @@
-# -*- coding: utf-8 -*-
 
-# Copyright 2023 Regulus
 
-# Permission is hereby granted, free of charge, to any person obtaining a
-# copy of this software and associated documentation files (the "Software"),
-# to deal in the Software without restriction, including without limitation
-# the rights to use, copy, modify, merge, publish, distribute, sublicense,
-# and/or sell copies of the Software, and to permit persons to whom the
-# Software is furnished to do so, subject to the following conditions:
+"""main.py
 
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
+Communication Middleware for TRNSYS Simulation
 
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
+This module provides functionality to interface with Modbus servers as part of a TRNSYS simulation. 
+It defines a `ModbusServer` class for handling connections, reading, and writing to Modbus servers. 
+The module is designed to work with TRNSYS, a transient system simulation program, by providing 
+custom functions for different stages of the simulation process such as initialization, time step 
+processing, and simulation end.
 
-# --------------------------------------------------------------------------
+The module also includes helper functions for initializing Modbus server connections based on 
+configured settings and for handling various TRNSYS simulation stages like start time, iteration, 
+end of time step, and last call of the simulation.
 
-__author__ = "Erika Langerová, Michal Broum"
-__copyright__ = "<2023> <Regulus>"
+Classes
+-------
+ModbusServer
+    A class representing a Modbus server, providing methods for connecting, reading, and writing data.
+
+Functions
+---------
+define_servers(server_configs)
+    Initializes Modbus servers based on provided configuration.
+
+Initialization(TRNData)
+    Initializes the global variable 'servers' and connects to servers for the TRNSYS simulation.
+
+StartTime(TRNData)
+    Handles actions to be performed at the start time of TRNSYS simulation.
+
+Iteration(TRNData)
+    Handles actions for each TRNSYS iteration within a time step.
+
+EndOfTimeStep(TRNData)
+    Handles end-of-time-step actions for the connected servers based on TRNData.
+
+LastCallOfSimulation(TRNData)
+    Closes connections and performs cleanup at the end of the TRNSYS simulation.
+
+Notes
+-----
+- The module uses global variables and relies on specific configuration files (`server_config` 
+  and `middleware_config`).
+- It is tailored to work with the TRNSYS simulation environment, specifically with its data handling.
+
+
+See Also
+--------
+server_config : Module providing server configurations.
+middleware_config : Module providing middleware configurations for the simulation.
+
+"""
+
+__author__ = "Erika Langerová"
+__copyright__ = "<2023> <UCEEB CVUT>"
 __credits__ = [" ", " "]
 
 __license__ = "MIT (X11)"
 __version__ = "1.2.1"
 __maintainer__ = ["Erika Langerová"]
-__email__ = ["erika.langerova@regulus.cz"]
-__status__ = "Alfa"
+__email__ = ["erika.langerova@cvut.cz"]
+__status__ = "Released"
 
 __python__ = "3.10.5"
 __TRNSYS__ = "18.04.0000"
 
 # --------------------------------------------------------------------------
 
-import logging
+# Standard library imports 
 import time as osTime
 from typing import Dict, List, Union, Optional
+
+# Third party imports
+import logging
 from pymodbus.client import ModbusTcpClient
 from pymodbus.payload import BinaryPayloadBuilder, Endian
+
+# Local imports
 from server_config import SERVER_CONFIGS
 from middleware_config import SIM_SLEEP, SIMULATION_MODEL, LOGGING_FILENAME
-
 
 # --------------------------------------------------------------------------
 
@@ -238,12 +273,10 @@ def define_servers(server_configs: List[Dict[str, Union[str, int, List[int], int
         servers.append(server)
     return servers
 
-
-
 # --------------------------------------------------------------------------------
 #                                   START
 # --------------------------------------------------------------------------------
-# ...
+
 
 def Initialization(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
@@ -292,8 +325,6 @@ def Initialization(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> No
             server.close_connection()
 
 
-# --------------------------------------------------------------------------------
-
 def StartTime(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
     Function called at TRNSYS starting time (not an actual time step, 
@@ -313,8 +344,6 @@ def StartTime(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
 
     return
 
- 
-# --------------------------------------------------------------------------------
 
 def Iteration(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
@@ -334,7 +363,6 @@ def Iteration(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     
     return
 
-# --------------------------------------------------------------------------------
 
 def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """
@@ -391,7 +419,6 @@ def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> Non
 
     osTime.sleep(SIM_SLEEP)
 
-# --------------------------------------------------------------------------------
 
 def LastCallOfSimulation(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> None:
     """

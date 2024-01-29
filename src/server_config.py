@@ -1,4 +1,15 @@
-# indexování je od nula
+
+"""server_config.py
+
+This config file contains the `SERVER_CONFIGS` list, which consists of dictionaries. 
+Each dictionary represents the configuration of a Modbus server, including details 
+such as the host address, port number, and register information. 
+Four ModBus servers are defined here as examples.
+
+The indexing starts at zero.
+
+"""
+
 SERVER_CONFIGS = [
     {
         "host": "10.208.8.11",

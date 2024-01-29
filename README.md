@@ -46,7 +46,7 @@ This project provides middleware designed for use within Hardware-in-the-Loop te
     ```
 
 ## Contents
-Inside the 'src' folder, you will find the following files:
+Inside the 'src' directory, you will find the following files:
 
 ### main.py
 This module provides functionality to interface with Modbus servers as part of a TRNSYS simulation. 
@@ -85,10 +85,15 @@ Four ModBus servers are defined here as examples.
 
 
 ## Configuration
-The configuration for Modbus servers is specified in SERVER_CONFIGS. This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
+The configuration for Modbus servers should be specified inside server_configs.py in SERVER_CONFIGS list. 
+This list includes dictionaries with details such as the host, port, registers, and input indexes for each server.
 
 > [!CAUTION]
 > Since this is Python, the indexing is zero-based.
+
+The server is specified like this, where host is the IP adress of the server, port is self-explanatory, rw_registers are
+read-write registers, input_indexes are indexes of the variables defined inside the Type 3157 that should be written 
+to the specified registers. Read registers are the ones that should be read and send back to TRNSYS.
 
 ```python
 SERVER_CONFIGS = [

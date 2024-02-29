@@ -189,8 +189,8 @@ class ModbusServer:
                 result = client.write_registers(addressRW-1, payload[indexRW])  # starts from 0
                 if result.isError():
                     logging.error(f"Error writing to PLC register for {self.host}:{self.port}: {result}")
-                #else:
-                #    logging.info(f"Successfully wrote {inputs[indexRW]} to PLC register {addressRW} for {self.host}:{self.port}")
+                else:
+                    logging.info(f"Successfully wrote {inputs[indexRW]} to PLC register {addressRW} for {self.host}:{self.port}")
 
             return inputs
 
@@ -398,7 +398,7 @@ def EndOfTimeStep(TRNData: Dict[str, Dict[str, List[Union[int, float]]]]) -> Non
             if server.r_registers:
                 server.read_outputs(TRNData)
         
-        #logging.info(f"server_inputs: {server_inputs}")
+        logging.info(f"server_inputs: {server_inputs}")
 
     except Exception as e:
         logging.error(f"Error during EndOfTimeStep: {e}")

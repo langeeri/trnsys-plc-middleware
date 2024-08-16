@@ -21,6 +21,7 @@ sphinx-rtd-theme==2.0.0
 sphinxcontrib-applehelp==1.0.7
 sphinxcontrib-devhelp==1.0.5
 cffi==1.15.1
+numpy==1.23.1
 sphinxcontrib-htmlhelp==2.0.4
 sphinxcontrib-jquery==4.1
 sphinxcontrib-jsmath==1.0.1

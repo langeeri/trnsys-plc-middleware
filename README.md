@@ -2,6 +2,8 @@
 
 This project provides middleware designed for use within Hardware-in-the-Loop testbeds in conjunction with TRNSYS simulations. It facilitates communication between TRNSYS and PLCs for both read-write and read-only operations. 
 
+For full setup see my [LinkedIn article](https://www.linkedin.com/pulse/ultimate-how-to-manual-coupling-trnsys-python-plcs-part-langerov%C3%A1-yzahe/?trackingId=cXJfq4FUSeuF10p4WXP%2F0Q%3D%3D).
+
 ## Table of Contents
 
 - [Introduction](#introduction)
